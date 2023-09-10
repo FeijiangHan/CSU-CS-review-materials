@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>方法</title>
+		<script type="text/javascript">
+			var GZH={
+				name:"guozihan",
+				birth:2001,
+				age:function(){
+					var now=new Date().getFullYear();
+					return now-this.birth;
+				}
+			}
+			console.log(GZH.age());
+			function g(){
+				var now=new Date().getFullYear();
+				return now-this.birth;
+			}
+			var x={
+				name:"guozihan",
+				birth:2001,
+				age:g
+				}
+			console.log(g.apply(x,[]));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

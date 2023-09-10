@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城右侧悬浮菜单</title>
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+		<style type="text/css">
+			body {
+				background-color: #ddd;
+				height: 2000px;
+				margin: 0;
+				padding: 0;
+			}
+
+			ul,
+			p {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			a {
+				text-decoration: none;
+			}
+			.sidebar {
+				width: 85px;
+				/* height: 500px; */
+				/* background-color: white; */
+				position: fixed;
+				/* 固定定位，相对于浏览器移动*/
+				right: 20px;
+				bottom: 100px;
+			}
+
+			.sidebar ul {
+				/* border: 1px solid red; */
+			}
+
+			.sidebar ul li {
+				border-bottom: 1px solid #ddd;
+				width: 85px;
+				height: 85px;
+				background-color: white;
+				position: relative;
+			}
+
+			.sidebar ul li:last-child {
+				margin-top: 20px;
+			}
+
+			.sidebar ul li span {
+				width: 85px;
+				height: 50px;
+				/* background-color: aquamarine; */
+				display: block;
+				font-size: 28px;
+				color: #666;
+				text-align: center;
+				line-height: 50px;
+			}
+
+			.sidebar ul li p {
+				font-size: 14px;
+				text-align: center;
+				color: #666;
+			}
+
+			.sidebar ul li:hover span,
+			.sidebar ul li:hover p {
+				color: hotpink;
+			}
+
+			.sidebar ul li .wxin {
+				width: 100px;
+				height: 100px;
+				background: #fff;
+				position: absolute;
+				top: 0;
+				left: -130px;
+				padding: 15px;
+				display: none;
+			}
+
+			.sidebar ul li:hover .wxin {
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="sidebar">
+			<ul>
+				<li>
+					<a href="">
+						<span class="iconfont icon-shouji"></span>
+						<p>手机APP</p>
+					</a>
+					<div class="wxin">
+						<img src="images/wx.png" alt="" width="100">
+					</div>
+				</li>
+				<li>
+					<a href="">
+						<span class="iconfont icon-gerenzhongxin"></span>
+						<p>个人中心</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="iconfont icon-shouhouwuyou"></span>
+						<p>售后服务</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="iconfont icon-kefu"></span>
+						<p>人工客服</p>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<span class="iconfont icon-gouwuchekong"></span>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li>
+					<span class="iconfont icon-fanhuidingbu"></span>
+					<p>回顶部</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

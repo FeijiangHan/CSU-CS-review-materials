@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>时间轴效果展示</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-image: linear-gradient(to right,#fdf1d8,#b2bcf9);
+			}
+			body,ul,h3{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.clearfix::after{/* 清除浮动 ，解决塌陷问题*/
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.time-axis{
+				width: 804px;
+				/* height: 700px; */
+				/* border: 1px solid red; */
+				margin: 50px auto 0;
+			}
+			.time-axis .left{
+				width: 400px;
+				/* height: 300px; */
+				/* background-color: beige; */
+				float: left;
+				border-right: 4px solid #b1bbf9;
+				position: relative;
+			}
+			.time-axis .right{
+				width: 400px;
+				/* height: 300px; */
+				/* background-color: azure; */
+				float: right;
+				border-left: 4px solid #b1bbf9;
+				position: relative;
+			}
+			.time-axis .dot{ /* 共用样式 */
+				width: 10px;
+				height: 10px;
+				background-color: #fff;
+				display: block;
+				border-radius: 100%;
+				border: 2px solid #b1bbf9;
+				position: absolute;
+				top: 50%;
+				margin-top: -7px;
+			}
+			.time-axis .left .dot{
+				right: -9px;
+			}
+			.time-axis .right .dot{
+				left: -9px;
+			}
+			.time-axis .jiantou{ /* 共用样式 */
+				width: 32px;
+				height: 32px;
+				/* border: 1px solid red; */
+				display: block;
+				position: absolute;
+				top: 50%;
+				margin-top: -18px;
+			}
+			
+			.time-axis .left .jiantou{
+				background: url('images/r-jiantou.png');
+				right: 0;
+			}
+			.time-axis .right .jiantou{
+				background: url('images/l-jiantou.png');
+				left: 0;
+				
+			}
+			.time-axis .con{ /* 共用样式 */
+				/* height: 200px; */
+				background-color: #fff;
+				padding: 15px;
+				border-radius: 10px;
+				text-align: center;
+			}
+			.time-axis .left .con{
+				margin-right: 22px;
+			}
+			.time-axis .right .con{
+				margin-left: 22px;
+			}
+			.time-axis .con h3{
+				font-weight: 400;
+			}
+			.time-axis .con h3 span{
+				font-size: 38px;
+				font-family: Arial;
+				color: #b1bbf9;
+				font-weight: 800;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="time-axis clearfix">
+			<div class="left">
+				<span class="dot"></span>
+				<span class="jiantou"></span>
+				<div class="con">
+					<h3><span>“</span> 春季腹泻要当心，益生菌要这样... <span>”</span></h3>
+					<img src="images/axis01.jpg" alt="" width="300">
+				</div>
+			</div>
+			<div class="right">
+				<span class="dot"></span>
+				<span class="jiantou"></span>
+				<div class="con">
+					<h3><span>“</span> 春季腹泻要当心，益生菌要这样... <span>”</span></h3>
+				</div>
+			</div>
+			<div class="left">
+				<span class="dot"></span>
+				<span class="jiantou"></span>
+				<div class="con">
+					<h3><span>“</span> 春季腹泻要当心，益生菌要这样... <span>”</span></h3>
+				</div>
+			</div>
+			<div class="right">
+				<span class="dot"></span>
+				<span class="jiantou"></span>
+				<div class="con">
+					<h3><span>“</span> 春季腹泻要当心，益生菌要这样... <span>”</span></h3>
+					<img src="images/axis02.jpg" alt="" width="300">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

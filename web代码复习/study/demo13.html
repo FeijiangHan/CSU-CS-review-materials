@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>二级下拉菜单效果</title>
+		<style type="text/css">
+			body,
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.clearfix::after {
+				/* 清除ul标签的塌陷问题 */
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.menu {
+				width: 100%;
+				height: 60px;
+				background-color: #fd6a88;
+			}
+
+			.menu .menu-con {
+				width: 1000px;
+				height: 60px;
+				/* background-color: aqua; */
+				margin: 0 auto;
+				/* 水平居中 */
+			}
+
+			.menu .menu-con ul {
+				/* border: 2px solid red; */
+			}
+
+			.menu .menu-con ul li {
+				/* border: 1px solid blue; */
+				/* width: 100px; */
+				height: 60px;
+				float: left;
+				position: relative;
+			}
+
+			.menu .menu-con ul li a {
+				display: block;
+				height: 60px;
+				color: white;
+				padding: 0 40px;
+				line-height: 60px;
+				text-align: center;
+			}
+
+			.menu .menu-con ul li:hover {/* 如果此处悬停改为a标签,顶部悬浮效果会消失 */
+				background-color: #ee4d75;
+			}
+
+			.menu .menu-con ul li div {
+				width: 200px;
+				/* height: 400px; */
+				background-color: #fd6a88;
+				position: absolute;
+				left: 50%;
+				margin-left: -100px;
+				top: 60px;
+				display: none;
+			}
+
+			.menu .menu-con ul li div a {
+				height: 40px;
+				line-height: 40px;
+				padding: 0;
+				font-size: 14px;
+			}
+
+			.menu .menu-con ul li div a:hover {
+				background-color: #ee4d75;
+			}
+			.menu .menu-con ul li:hover div{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="menu">
+			<div class="menu-con">
+				<ul class="clearfix">
+					<li>
+						<a href="#">小米手机</a>
+						<div>
+							<a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">Redmi小米</a>
+						<div><a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">电视</a>
+						<div><a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">笔记本</a>
+						<div><a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">平板</a>
+						<div><a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+					<li>
+						<a href="#">路由器</a>
+						<div><a href="">Xiaomi Pro 12</a><!-- 样式继承 -->
+							<a href="">Xiaomi 12</a>
+							<a href="">Xiaomi 青春活力版</a>
+							<a href="">Xiaomi 12X</a>
+							<a href="">Xiaomi civi</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

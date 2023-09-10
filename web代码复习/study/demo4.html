@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>产品展示效果</title>
+		<style type="text/css">
+			body,
+			p,
+			h3 {
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+				/* border: 1px solid red; */
+				display: block;/* 干掉bug */
+			}
+			.product {
+				width: 268px;
+				/* height: 500px; */
+				/* background-color: red; */
+				margin: 50px auto 0;
+				border: 1px solid #ddd;
+				text-align: center;
+				/* 水平居中 */
+
+			}
+
+			.product p.describe {
+				/* border: 1px solid red; */
+				color: #845f3f;
+				font-size: 16px;
+			}
+
+			.product-text {
+				height: 100px;
+				background-color: #f8f8f8;
+				margin-top: 20px;
+				padding: 5px;
+			}
+			/* 去除图片空隙 */
+			.product .product-text .product-mark{
+				font-size: 0;
+			}
+			.product .product-text h3 {
+				font-size: 20px;
+				font-weight: 400;
+				/* border: 1px solid red; */
+				/* margin-top: 10px;s */
+				color: #000;
+			}
+
+			.product .product-text p {
+				color: #a92112;
+				font-size: 20px;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="product">
+			<a href="" target="_blank">
+				<img src="images/kettle.png" alt="电水壶" width="195px">
+				<p class="describe">快速煮水，放心饮用</p>
+				<div class="product-text">
+					<div class="product-mark">
+						<img src="images/live.png" alt="直播中" height="20">
+						<img src="images/odds.png" alt="特惠" height="20">
+						<img src="images/30day.png" alt="30天保价" height="20">
+						<img src="images/server.png" alt="售后免邮" height="20">
+					</div>
+					<h3>云米电水壶</h3>
+					<p>￥59</p>
+				</div>
+			</a>
+		</div>
+	</body>
+</html>

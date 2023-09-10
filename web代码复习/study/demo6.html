@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>常用的选项卡菜单效果</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			.tab{
+				width: 800px;
+				/* height: 50px; */
+				background-color: #f7f7f7;
+				border-radius: 50px;
+				margin: 50px auto 0;
+				font-size: 0;
+				text-align: center;
+				padding: 5px 0;
+			}
+			.tab span{
+				/* border: 1px solid red; */
+				height: 40px;
+				display: inline-block;
+				padding: 0 40px;
+				line-height: 40px;
+				font-size: 16px;
+				border-radius: 50px;
+			}
+			.tab span i{
+				width: 26px;
+				height: 26px;
+				/* border: 1px solid red; */
+				display: inline-block;
+				background-image: url('images/icon.png');
+				vertical-align: middle;/* 图像垂直居中,只对行内块级元素有效 */	
+				margin-right: 5px;
+			}
+			.tab span i.icon1{
+				background-position: -26px 0px;
+			}
+			.tab span i.icon2{
+				background-position: -52px 0px;
+			}
+			.tab span i.icon3{
+				background-position: -78px 0px;
+			}
+			.tab span i.icon4{
+				background-position: -104px 0px;
+			}
+			.tab span i.icon5{
+				
+			}
+			.tab span.current{
+				background-color: #fe94a9;
+				color: #fff;
+			}
+			.tab span.current i.icon1{
+				background-position: 0 -26px;
+			}
+			.tab span.current i .icon2{
+				background-position: -26px -26px;
+			}
+			.tab span.current i .icon3{
+				background-position: -52px -26px;
+			}
+			.tab span.current i .icon4{
+				background-position: -78px -26px;
+			}
+			.tab span.current i .icon5{
+				background-position: -104px -26px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="tab">
+			<span class="current"><i class="icon1"></i>备孕期间</span>
+			<span><i class="icon2"></i>怀孕</span>		
+			<span><i class="icon3"></i>0-1岁</span>
+			<span><i class="icon4"></i>1-2岁</span>
+			<span><i class="icon5"></i>2-3岁</span>
+		</div>
+	</body>
+</html>

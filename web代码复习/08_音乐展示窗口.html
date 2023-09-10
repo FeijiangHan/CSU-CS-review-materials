@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        p,
+        h3 {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .container {
+            width: 480px;
+            height: 480px;
+            margin: 50px auto 0;
+        }
+
+        .container a {
+            /*不指定高度时的高度=所有子元素中block元素高度之和(考虑border宽度)*/
+            height: 480px;
+            /*把a标签撑大*/
+            display: block;
+            position: relative;
+        }
+        
+        .num {
+            height: 35px;
+            width: 200px;
+            /*相对于block-a使用top定位*/
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0));
+            color: rgb(255, 255, 255);
+            text-align: right;
+            line-height: 35px;
+        }
+        .details {
+            width: 100%;
+            height: 80px;
+            /*相对于block-a使用bottom定位*/
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+        }
+        .num .icon {
+            width: 35px;
+            height: 35px;
+            float: right;
+            /*设置svg背景图标前需要指定高度和宽度*/
+            background: url("study/images/earphone.svg") no-repeat center;
+            /*调节svg图片大小*/
+            background-size: 20px;
+            margin-right: 0.5rem;
+        }
+        .num span{
+            font-weight: 100;
+        }
+
+        .details h3 {
+            font-weight: 100;
+            padding: 15px 0 5px 10px;
+        }
+        .details p {
+            color: #ddd;
+            padding-left: 10px;
+        }
+
+        小米商城首页产品栏
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="">
+            <img src="study\images\kugou-img1.jpg" width="480px">
+            <div class="num">
+                <span class="icon"></span>
+                <span>679.9万</span>
+            </div>
+            <div class="details">
+                <h3>乡村之旅: 安静惬意, 与自然同在</h3>
+                <p>蔓若</p>
+            </div>
+            <div class="mask">
+                <div class="play-button"></div>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标悬停3D翻转效果</title>
+		<style type="text/css">
+			body,h3,p{
+				margin: 0;
+				padding: 0;
+			}
+			.scene{
+				width: 400px;
+				height: 400px;
+				/* border: 2px solid red; */
+				margin: 100px auto 0;
+				/* 视距,决定了3D效果*/
+				perspective: 800px;
+			}
+			.scene .box{
+				width: 400px;
+				height: 300px;
+				/* background-color: yellow;*/
+				/* 添加过渡动画 */
+				transition: all ease 1s;
+				position: relative;
+				/* 令元素呈现3D效果 */
+				transform-style: preserve-3d;
+			}
+			.scene .box:hover{
+				transform: rotateY(-180deg);
+			}
+			.box .box-front{
+				width: 400px;
+				height: 300px;
+				background-color: pink;
+				position: absolute;
+				left: 0;
+				top: 0;
+				/* 调高层级 */
+				z-index: 2;
+			}
+			.box .box-mid{
+				width: 400px;
+				height: 300px;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform: translateZ(-1px);
+			}
+			.box .box-back{
+				width: 200px;
+				height: 200px;
+				background-color: skyblue;
+				background-image: linear-gradient(to bottom right,pink,#fff,skyblue);
+				position: absolute;
+				left: 50%;
+				margin-left: -100px;
+				top: 50%;
+				margin-top: -100px;
+				transform: translateZ(-100px) rotateY(-180deg);
+				font-size: 14px;
+				line-height: 20px;
+				box-sizing: border-box;
+				border-radius: 10px;
+			}
+			.box .box-back h3{
+				text-align: center;
+				color: #000;
+				font-weight: 400;
+				font-size: 16px;
+			}
+			.box .box-back p{
+				font-size: 13px;
+				margin: 10px;
+				font-weight: 200;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="scene">
+			<div class="box">
+				<div class="box-front">
+					<img src="images/3d01.jpg" alt="">
+				</div>
+				<div class="box-mid"></div>
+				<div class="box-back">
+					<h3>每日一言</h3>
+					<p>遗憾的是我们生活在两条平行直线永远不会相交的世界里。</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

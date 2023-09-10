@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>自动轮播图效果</title>
+		<style type="text/css">
+			body ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			.banner {
+				width: 1000px;
+				height: 466px;
+				margin: 50px auto 0;
+				background-color: aqua;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.banner ul {
+				/* border: 2px solid red; */
+				width: 10000px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.banner ul li {
+				/* border: 2px solid #000; */
+				width: 1000px;
+				height: 466px;
+				float: left;
+			}
+
+			.banner .prev,
+			.banner .next {
+				width: 41px;
+				height: 69px;
+				/* border: 2px solid red; */
+				position: absolute;
+				top: 50%;
+				margin-top: -35px;
+				background: url('images/icon-slides.png');
+			}
+
+			.banner .prev {
+				left: 0;
+				background-position:-83px 0;
+			}
+
+			.banner .next {
+				right: 0;
+				background-position:-125px 0;
+			}
+
+			.banner .prev:hover {
+				background-position: 0 0;
+			}
+
+			.banner .next:hover {
+				background-position: -42px 0;
+			}
+			.banner .button{
+				width: 100%;
+				height: 50px;
+				background-color: rgba(0, 0, 0, 0.5);
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				font-size: 0;/* 去除圆点之间的间隙 */
+				text-align: center;
+				line-height: 50px;
+			}
+			.banner .button span{
+				width: 10px;
+				height: 10px;
+				background-color: white;
+				display: inline-block;
+				border-radius: 50%;
+				margin: 0 3px;
+				vertical-align: middle;
+			}
+			.button span.current{
+				background-color: hotpink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<ul>
+				<li><img src="images/slide-1.png" alt=""></li>
+				<li><img src="images/slide-2.png" alt=""></li>
+				<li><img src="images/slide-3.png" alt=""></li>
+				<li><img src="images/slide-4.png" alt=""></li>
+				<li><img src="images/slide-5.png" alt=""></li>
+			</ul>
+			<div class="prev"></div>
+			<div class="next"></div>
+			<div class="button">
+				<span class="current"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</body>
+</html>

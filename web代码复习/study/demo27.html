@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex弹性布局-微博热搜榜单</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f5f5f5;
+			}
+			a{
+				text-decoration: none;
+			}
+			.wbpro-side{
+				width: 240px;
+				/* height: 600px; */
+				background-color: #fff;
+				margin:50px 0 0 50px;
+				padding: 10px 15px;
+			}
+			.wbpro-side .wbpro-side-head{
+				height: 40px;
+				/* background-color: antiquewhite; */
+				display: flex;
+				align-items: center;
+				border-bottom: 1px solid #f9f9f9;
+				cursor: pointer;
+			}
+			.wbpro-side .wbpro-side-head span.title{
+				flex-grow: 1;
+				font-size: 14px;
+			}
+			.wbpro-side .wbpro-side-head span.sx{
+				font-size: 12px;
+				color: #939393;
+				margin-left: 5px;
+			}
+			.wbpro-side .wbpro-side-panel{
+				height: 40px;
+				/* background-color: antiquewhite; */
+				border-bottom: 1px solid #f9f9f9;
+				font-size: 12px; 
+				display: flex;
+			}
+			.wbpro-side .wbpro-side-panel a{
+				display: flex;
+				align-items: center;
+				/* background-color: red; */
+				width: 100%;
+			}
+			/* 新闻标题 */
+			.wbpro-side-panel a span.title{
+				flex-grow: 1;
+				color: #333;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			/* 新闻排名 */
+			.wbpro-side-panel a span.icon{
+				font-size: 16px;
+				font-weight: bold;
+				color: #ff9406;
+				margin-right: 10px;
+			}
+			/* 新闻阅读量 */
+			.wbpro-side-panel .num{
+				color: #939393;
+				/* 防止文字过多压缩阅读量所占的空间 */
+				flex-shrink: 0;
+			}
+			/* 新闻标签 */
+			.wbpro-side-panel .mark{
+				/* background-color: #ff9406; */
+				color: #fff;
+				padding: 2px 4px;
+				border-radius: 5px;
+				margin-left: 5px;
+			}
+			/* 类wbpro-side-panel父元素(wbpro-side)的1-5的子元素,并且子元素样式名需是wbpro-side-panel */
+			/* .wbpro-side-panel:nth-child(-n+5){
+				background-color: aqua;
+			} */
+			.wbpro-side-panel:nth-child(-n+5) a span.icon{
+				color: red;
+			}
+			
+			/* 自定义颜色 */
+			.bg1{
+				background-color: #ff9406;
+			}
+			.bg2{
+				background-color: pink;
+			}
+			.bg3{
+				background-color: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wbpro-side">
+			<div class="wbpro-side-head">
+				<span class="title">微博热搜</span>
+				<img src="images/icon-sx.png" alt="">
+				<span class="sx">点击刷新</span>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">
+						<img src="images/icon_top.png" alt="">
+					</span>
+					<span class="title">新的赶考之路考卷常出常新新的赶考之路考卷常出常新新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg1">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">2</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg3">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">3</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg2">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">4</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg3">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">5</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg1">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">6</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg3">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">7</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg2">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">8</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg3">新</span>
+				</a>
+			</div>
+			<div class="wbpro-side-panel">
+				<a href="">
+					<span class="icon">9</span>
+					<span class="title">新的赶考之路考卷常出常新</span>
+					<span class="num">246万</span>
+					<span class="mark bg1">新</span>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>

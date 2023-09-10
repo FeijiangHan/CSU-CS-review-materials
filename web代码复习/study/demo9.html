@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城首页产品栏</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				background-color: #ddd;
+			}
+
+			h3,
+			h4,
+			p,
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+
+			ul {
+				list-style: none;
+			}
+
+			a {
+				text-decoration: none;
+				color: #000;
+			}
+
+			.product {
+				width: 1226px;
+				/* height: 700px; */
+				/* border: 2px solid red; */
+				margin: 50px auto 0;
+			}
+
+			.product .product-hot {
+				width: 234px;
+				/* height: 614px; */
+				/* background-color: aqua; */
+				float: left;
+			}
+
+			.product-hot img {
+				/* 变成块级元素，消除img标签所产生的空隙 */
+				display: block;
+			}
+
+			.product .product-list {
+				width: 992px;
+				/* height: 614px; */
+				/* background-color: bisque; */
+				float: right;
+			}
+
+			.clearfix::after {
+				/* 清除浮动 */
+				content: "";
+				display: block;
+				clear: both;
+			}
+
+			.product-list ul {
+				/* border: 2px solid #000; */
+			}
+
+			.product-list ul li {
+				/* border: 2px solid blue; */
+				width: 234px;
+				height: 300px;
+				float: left;
+				margin-left: 14px;
+				margin-bottom: 14px;
+				background-color: white;
+
+			}
+
+			.product-list ul li:nth-last-child(1) {
+				height: 143px;
+			}
+
+			.product-list ul li:nth-last-child(2) {
+				height: 143px;
+			}
+
+			.product-list ul li a {
+				/* border: 2px solid #000; */
+				display: block;
+				/* 内联元素变块级元素 */
+				height: inherit;
+				/* 继承父高 */
+				text-align: center;
+				padding-top: 30px;
+				box-sizing: border-box;
+				/* 设置为怪异盒模型 */
+			}
+
+			/* 	.product-list ul li a img{
+				margin-top: 30px;
+			} */
+			.product-list ul li a h3 {
+				/* 标题隐藏省略效果 */
+				font-size: 14px;
+				font-weight: 400px;
+				padding: 0 5px 0;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+			}
+
+			.product-list ul li a p.describe {
+				color: #999;
+			}
+
+			.product-list ul li a p.price {
+				font-size: 14px;
+				padding-top: 15px;
+			}
+
+			.product-list ul li a p.price span {
+				color: orange;
+				margin-right: 10px;
+			}
+
+			.product-list ul li a p.price del {
+				color: #999;
+			}
+
+			.product-list ul li .txt {
+				width: 100px;
+				height: 100px;
+				/* background-color: aqua; */
+				float: left;
+				margin-left: 20px;
+			}
+
+			.product-list ul li .img {
+				width: 80px;
+				height: 80px;
+				/* background-color: blue; */
+				float: right;
+				margin-right: 20px;
+			}
+
+			.product-list ul li .txt h4 {
+				font-weight: 400;
+				font-size: 14px;
+				text-align: left;
+			}
+
+			.product-list ul li .txt p {
+				font-size: 14px;
+				text-align: left;
+				color: orange;
+				margin-top: 15px;
+			}
+			.product-list ul li .more{
+				margin-top: 20px;
+			}
+			.product-list ul li .txt h4.ti{
+				font-size: 20px;
+			}
+			.product-list ul li .txt p.hot{
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="product clearfix">
+			<div class="product-hot">
+				<a href="">
+					<img src="images/mi00.webp" alt="热卖" width="234px">
+				</a>
+			</div>
+			<div class="product-list">
+				<ul class="clearfix">
+					<li>
+						<a href="">
+							<img src="images/mi01.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi02.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi03.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi04.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi05.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi06.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/mi07.webp" alt="" width="160">
+							<h3>Xiaomi Watch S1</h3>
+							<p class="describe">腕事具备</p>
+							<p class="price"><span>1099元起</span><del>2099元起</del></p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txt">
+								<h4>Redmi Buds 3 青春版</h4>
+								<p>999元</p>
+							</div>
+							<div class="img">
+								<img src="images/mi08.webp" alt="" width="80">
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="txt">
+								<h4 class="ti">浏览更多</h4>
+								<p class="hot">热门</p>
+							</div>
+							<div class="img more">
+								<img src="images/circle-arrow.svg" alt="" width="48">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

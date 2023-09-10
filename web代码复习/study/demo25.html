@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex弹性布局-酷狗音乐播放列表</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.container {
+				width: 100%;
+				/* height: 600px; */
+				/* background-color: antiquewhite; */
+				/* 设置最小宽度,防止缩至过少造成挤压 */
+				min-width: 680px;
+				margin-top: 100px;
+				/* 弹性布局 */
+				display: flex;
+				flex-wrap: wrap;
+			}
+			.container .item {
+				width: 25%;
+				display: flex;
+				/* 调成内容居中显示 */
+				justify-content: center;
+				margin-bottom: 20px;
+			}
+
+			.container .item .item-con {
+				width: 150px;
+				/* border: 1px solid red; */
+				/* 弹性布局方向设置为纵向 */
+				display: flex;
+				flex-direction: column;
+			}
+
+			.item-con a.item-con-img {
+				height: 150px;
+				/* background-color: antiquewhite; */
+				position: relative;
+			}
+
+			.item-con a.item-con-img img {
+				border-radius: 10px;
+			}
+			/* 下方文字 */
+			.item a.item-con-img span {
+				font-size: 14px;
+				color: #fff;
+				/* background-color: red; */
+				display: flex;
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
+				z-index: 2;
+			}
+
+			.item-con a.item-con-img span img {
+				margin-right: 5px;
+			}
+			/* 图片半下方遮罩层 */
+			.item-con a.item-con-img::after{
+				content: '';
+				width: 100%;
+				height: 50%;
+				/* 使用渐变色 */
+				background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(0,0,0,0.5));
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				border-radius: 0px 0px 10px 10px;
+			}
+			.item-con a.item-con-title{
+				font-size: 14px;
+				color: #333;
+				margin-top: 10px;
+			}
+			.item-con a.item-con-title:hover{
+				color: tomato;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-01.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-02.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-03.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-04.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-05.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-06.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-07.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-con">
+					<a href="" class="item-con-img">
+						<img src="images/flex-08.jpg" alt="">
+						<span>
+							<img src="images/icon_play.png" alt="" width="14">
+							2444.0万
+						</span>
+					</a>
+					<a href="" class="item-con-title">
+						催眠：Delta脑波音乐减压深度睡眠
+					</a>
+				</div></div>
+		</div>
+	</body>
+</html>

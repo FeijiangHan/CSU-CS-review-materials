@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基础知识</title>
+		<!-- 内部引入 -->
+		<!-- <script type="text/javascript">
+			alert("hello world!");
+		</script> -->
+		<!-- 'user strict';严格检查模式，预防JavaScript的随意性导致产生一些问题 -->
+		<!-- 局部变量建议使用let定义-->
+		<!-- 全局变量用var来定义 -->
+		<script type="text/javascript">
+			var num=1;
+			console.log(num);
+			// 数据类型
+			123; // 整数123
+			0.456; // 浮点数0.456
+			1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5
+			-99; // 负数
+			NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示
+			Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就
+			// 表示为Infinity
+			'abc';// 字符串
+			"abc"// 字符串
+			true;false;// 布尔值
+			// = //赋值符号
+			// == // 等于（类型不一样，值一样也会判断为true）
+			// === //绝对等于（类型和值必须都一样）
+			NaN === NaN; // false
+			isNaN(NaN); // true
+			1 / 3 === (1 - 2 / 3); // false
+			// 这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小
+           // 数。要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：
+            Math.abs(1 / 3 - (1 - 2 / 3)) < 0.0000001; // true
+			 // null 表示一个空的值，而 undefined 表示值未定义。事实证明，这并
+            // 没有什么卵用，区分两者的意义不大。大多数情况下，我们都应该用 null 。 undefined 仅仅在判
+           // 断函数参数是否传递的情况下有用。
+		   var arr=[1,2,3,4,5,'hello',null,true]; //数组
+		   // 对象person
+		   var person={
+			   name:"qinjiang",
+			   age:3,
+			   tags:['js','java','web','...']
+		   }
+		</script>
+		<!-- 外部引入 -->
+		<script src="../js/demo1.js"></script>
+	</head>
+	<body>
+	</body>
+</html>

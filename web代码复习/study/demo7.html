@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>网页框架布局</title>
+		<style type="text/css">
+			body ul{
+				margin: 0;
+				padding: 0;
+			}
+
+			.layout {
+				width: 1000px;
+				/* height: 800px;
+				background-color: aquamarine; */
+				margin: 50px auto 0;
+			}
+
+			.column-2 {
+				/* border: 2px solid #000; */
+				margin-top: 20px;
+			}
+
+			.column-2 .column-2-1 {
+				width: 700px;
+				height: 300px;
+				float: left;
+				background-color: red;
+			}
+
+			.column-2 .column-2-2 {
+				width: 280px;
+				height: 300px;
+				float: right;
+				background-color: yellow;
+			}
+
+			.clear {
+				clear: both;
+			}
+
+			.column-3 {
+				/* border: 2px solid #000; */
+				margin-top: 20px;
+			}
+
+			.column-3-1 {
+				width: 260px;
+				height: 300px;
+				background-color: bisque;
+				float: left;
+			}
+
+			.column-3-2 {
+				width: 300px;
+				height: 300px;
+				background-color: orangered;
+				float: left;
+				margin-left: 20px;
+			}
+
+			.column-3-3 {
+				width: 400px;
+				height: 300px;
+				background-color: #009af3;
+				float: right;
+			}
+
+			.clearfix::after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+			ul{
+				list-style: none;
+			}
+			.column-n{
+				margin-top: 20px;
+			}
+			.column-n ul{
+				/* border: 2px solid blue; */
+			}
+			.column-n ul li{
+				/* border: 1px solid #000; */
+				width: 190px;
+				height: 200px;
+				float: left;
+				margin: 5px;
+				background-color: chartreuse;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layout">
+			<div class="column-2">
+				<div class="column-2-1"></div>
+				<div class="column-2-2"></div>
+				<div class="clear"></div>
+			</div>
+			<div class="column-3 clearfix">
+				<div class="column-3-1"></div>
+				<div class="column-3-2"></div>
+				<div class="column-3-3"></div>
+			</div>
+			<div class="column-n">
+				<ul class="clearfix">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

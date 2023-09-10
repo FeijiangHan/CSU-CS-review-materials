@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, img, ul, li, a {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        .container {
+            width: 1000px;
+            height: 465px;
+            margin: 20px auto 0;
+            position: relative;
+            border: 1px solid rgb(0, 0, 0);
+            overflow: hidden;
+        }
+
+        .container ul{
+            display: flex;
+        }
+        
+        .left,.right {
+            position: absolute;
+            width: 41px;
+            height: 69px;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 50%;
+            background: url('study/images/icon-slides.png');
+            border-radius: 6px;
+        }
+
+        .left {
+            left: 0;
+            display: none;
+        }
+
+        .right {
+            right: 0;
+            /*旋转*/
+            transform: rotate(180deg);
+            display: none;
+        }
+
+        .container:hover .left,.container:hover .right{
+            display: block;
+        }
+    
+        .bottom {
+            height: 45px;
+            width: 1000px;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            position: absolute;
+            bottom: 0;
+
+            font-size: 0;/* 去除圆点之间的间隙 */
+            text-align: center;
+            line-height: 45px;
+        }
+
+        .bottom span {
+            /*绘制圆点*/
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+
+            background-color: rgb(255, 255, 255);
+
+            /*横向居中*/
+            display: inline-block;
+            /*与文字的中间基线对其, 因此文字高度需要设置为和外层div相同高度,这样文字的基线才是div的中线*/
+            vertical-align: middle;
+            margin: 0 0.2rem;
+        }
+
+        .bottom span.current {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><img src="study/images/slide-1.png" alt=""></li>
+            <li><img src="study/images/slide-2.png" alt=""></li>
+            <li><img src="study/images/slide-3.png" alt=""></li>
+            <li><img src="study/images/slide-4.png" alt=""></li>
+            <li><img src="study/images/slide-5.png" alt=""></li>
+        </ul>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom">
+            <span class="current"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>

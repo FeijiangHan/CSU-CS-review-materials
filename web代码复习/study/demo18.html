@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标悬停缩放效果</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.clearfix {
+				content: '';
+				display: block;
+				clear: both;
+			}
+
+			.flower {
+				width: 960px;
+				/* height: 300px; */
+				/* border: 2px solid red; */
+				margin: 100px auto 0;
+			}
+
+			.flower .item {
+				width: 300px;
+				height: 300px;
+				background-color: aqua;
+				float: left;
+				margin: 0 10px;
+				overflow: hidden;
+				position: relative;
+			}
+
+			.item img {
+				transition: transform ease .5s;
+			}
+
+			.item:hover img {
+				transform: scale(1.2);
+			}
+
+			.item .item-mask {
+				width: 300px;
+				height: 300px;
+				background-color: rgba(0, 0, 0, 0);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all ease .5s;
+				/* 怪异盒模型处理遮罩层偏移问题 也可通过定位解决 */
+				box-sizing: border-box;
+				/* 水平 垂直 阴影羽化 阴影大小 阴影颜色 */
+				box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.5);
+			}
+
+			.item:hover .item-mask {
+				transform: scale(0.8);
+				background-color: rgba(0, 0, 0, 0.5);
+				border: 5px solid #fff;
+			}
+
+			.item .title {
+				/* border: 1px solid red; */
+				position: absolute;
+				top: 80px;
+				left: 40px;
+				right: 40px;
+				text-align: center;
+				font-size: 18px;
+				/* font-weight: 700; */
+				color: #fff;
+				transform: scale(1.2);
+				opacity: 0;
+				transition: all ease .5s;
+			}
+
+			.item:hover .title {
+				transform: scale(1);
+				opacity: 1;
+			}
+
+			.item .item-info {
+				/* border: 1px solid blue; */
+				position: absolute;
+				top: 110px;
+				left: 40px;
+				right: 40px;
+				color: #fff;
+				font-size: 14px;
+				transform: scale(1.2);
+				opacity: 0;
+				transition: all ease .5s;
+			}
+
+			.item:hover .item-info {
+				transform: scale(1);
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flower clearfix">
+			<div class="item">
+				<img src="images/scale1.jpg" alt="" width="300">
+				<div class="item-mask"></div>
+				<div class="title">金凤蝶</div>
+				<div class="item-info">金凤蝶，Papilio machaon Linnaeus，又名黄凤蝶、茴香凤蝶、胡萝卜凤蝶，属鳞翅目，凤蝶科。因其体态华贵，花色艳丽而得名。
+					有“能飞的花朵”、“昆虫美术家”的雅号。</div>
+			</div>
+			<div class="item">
+				<img src="images/scale2.jpg" alt="" width="300">
+				<div class="item-mask"></div>
+				<div class="title">金凤蝶</div>
+				<div class="item-info">金凤蝶，Papilio machaon Linnaeus，又名黄凤蝶、茴香凤蝶、胡萝卜凤蝶，属鳞翅目，凤蝶科。因其体态华贵，花色艳丽而得名。
+					有“能飞的花朵”、“昆虫美术家”的雅号。</div>
+			</div>
+			<div class="item">
+				<img src="images/scale3.jpg" alt="" width="300">
+				<div class="item-mask"></div>
+				<div class="title">金凤蝶</div>
+				<div class="item-info">金凤蝶，Papilio machaon Linnaeus，又名黄凤蝶、茴香凤蝶、胡萝卜凤蝶，属鳞翅目，凤蝶科。因其体态华贵，花色艳丽而得名。
+					有“能飞的花朵”、“昆虫美术家”的雅号。</div>
+			</div>
+		</div>
+	</body>
+</html>

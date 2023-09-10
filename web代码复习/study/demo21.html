@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>全屏加载动画效果</title>
+		<link rel="stylesheet" href="css/animate.min.css">
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.container {
+				width: 100%;
+				/* 浏览器整个高度被分为100份,100vh即为整个页面高度 */
+				height: 100vh;
+				background-color: aqua;
+				position: relative;
+			}
+
+			.box {
+				width: 1080px;
+				height: 540px;
+				/* background-color: beige; */
+				position: absolute;
+				/* 设置水平居中效果 */
+				left: 50%;
+				margin-left: -540px;
+				top: 50%;
+				margin-top: -270px;
+			}
+			.box .item{
+				float: left;
+				margin: 10px;
+				border-radius: 10px;
+			}
+			.item1{
+				width: 250px;
+				height: 520px;
+				background-image: linear-gradient(to bottom,#fff,pink);
+			}
+			.item2,.item3{
+				width: 380px;
+				height: 250px;
+				background-image: linear-gradient(to bottom,pink,#fff);
+			}
+			.item4,.item5,.item6{
+				width: 250px;
+				height: 250px;
+				background-image: linear-gradient(to bottom,#fff,pink);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box">
+				<div class="item item1 animate__animated animate__backInDown">可是</div>
+				<div class="item item2 animate__animated animate__backInLeft">遗憾的是。</div>
+				<div class="item item3 animate__animated animate__backInRight">我们生活在</div>
+				<div class="item item4 animate__animated animate__backInUp">两条平行直线</div>
+				<div class="item item5 animate__animated animate__bounceIn">永远不会相交的</div>
+				<div class="item item6 animate__animated animate__fadeInDown">世界里</div>
+			</div>
+		</div>
+	</body>
+</html>

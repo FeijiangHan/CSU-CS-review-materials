@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标移入旋转动画</title>
+		<style type="text/css">
+			body,h3,p{
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				width: 400px;
+				height: 300px;
+				background-color: red;
+				margin: 100px auto 0;
+				position: relative;/* 相对定位,参考物 */
+				overflow: hidden;
+			}
+			.box:hover img{
+				filter: blur(5px);
+			}
+			.box::after{
+				content: '';
+				width: 500px;
+				height: 0;
+				background-color: rgba(0, 0, 0, 0);
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform-origin: left center;
+				transform: rotate(37deg);
+				transition: all ease .5s;
+				
+			}
+			.box:hover::after{
+				height: 300px;
+				top: -150px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.box .txt{
+				/* border: 2px solid red; */
+				position: absolute;
+				top: 80px;
+				left: 60px;
+				right: 100px;
+				z-index: 3;/* 改变层级,防止遮罩掩盖文字 */
+				transform: rotate(30deg);
+				transition: all ease .5s;
+				color: #fff;
+				opacity: 0;
+			}
+			.box .txt h3{
+				font-size: 20px;
+				font-weight: 400;
+				margin-bottom: 10px;
+			}
+			.box .txt p{
+				font-size: 14px;
+				line-height: 25px;
+			}
+			.box:hover .txt{
+				transform: rotate(0);
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="images/rotate1.webp" alt="" width="400" height="300">
+			<!-- <div class="mask"></div> --><!-- 也可用mask实现特效 -->
+			<div class="txt">
+				<h3>风景如画</h3>
+				<p>风景如画是“风景”和“如画”的连用，意思是美丽的景色如画出来的一样，比喻景色像图画一样呈现在眼前</p>
+			</div>
+		</div>
+	</body>
+</html>

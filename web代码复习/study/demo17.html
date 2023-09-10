@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>鼠标移入文字加载动画</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			/* 清除浮动 */
+			.clearfix::after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			.box {
+				width: 1200px;
+				/* height: 370px; */
+				/* background-color: red; */
+				margin: 50px auto;
+			}
+			.box .item{
+				width: 280px;
+				height: 370px;
+				/* border: 1px solid blue; */
+				/* background-color: blue; */
+				float: left;
+				margin: 0 10px;
+				position: relative;
+				overflow: hidden;
+			}
+			/* 遮罩层 */
+			.item-mask{
+				width: 280px;
+				height: 370px;
+				background-color: rgba(0, 0, 0, 0);
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: background-color ease 2s;/* 动画过渡效果 */
+			}
+			.item:hover .item-mask{
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.item .item-title{
+				/* border: 1px solid aqua; */
+				position: absolute;
+				top:-50px;
+				left: 20px;
+				color: white;
+				transition: top ease .5s;
+			}
+			.item:hover .item-title{
+				top: 250px;
+			}
+			.item .item-singer{
+				/* border: 1px solid blue; */
+				position: absolute;
+				top: 290px;
+				left: 0px;
+				color: #fff;
+				font-size: 14px;
+				transform: translateX(-100%);/* 刚好向左移动自身的宽度 */
+				transition: all ease .5s;
+			}
+			.item:hover .item-singer{
+				transform: translateX(25px);/* 右移25px */
+			}
+			.item .item-info{
+				/* border: 1px solid aqua; */
+				position: absolute;
+				/* top: 320px; */
+				left: 20px;
+				right: 20px;
+				font-size: 14px;
+				color:white;
+				top: 370px;
+				transition: top ease .5s;
+			}
+			.item:hover .item-info{
+				top: 320px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box clearfix">
+			<div class="item">
+				<img src="images/hover1.jpg" alt="" width="280">  
+				<div class="item-mask"></div>
+				<div class="item-title">《听闻远方的你》</div>
+				<div class="item-singer">演唱：刘艺雯</div>
+				<div class="item-info">我吹过你吹过的风，这算不算相拥，我走过你走过的路，这算不算相逢</div>
+			</div>
+			<div class="item">
+				<img src="images/hover2.jpg" alt="" width="280">  
+				<div class="item-mask"></div>
+				<div class="item-title">《听闻远方的你》</div>
+				<div class="item-singer">演唱：刘艺雯</div>
+				<div class="item-info">我吹过你吹过的风，这算不算相拥，我走过你走过的路，这算不算相逢</div>
+			</div>
+			<div class="item">
+				<img src="images/hover3.jpg" alt="" width="280">
+				<div class="item-mask"></div>
+				<div class="item-title">《听闻远方的你》</div>
+				<div class="item-singer">演唱：刘艺雯</div>
+				<div class="item-info">我吹过你吹过的风，这算不算相拥，我走过你走过的路，这算不算相逢</div>
+			</div>
+			<div class="item">
+				<img src="images/hover4.jpg" alt="" width="280">
+				<div class="item-mask"></div>
+				<div class="item-title">《听闻远方的你》</div>
+				<div class="item-singer">演唱：刘艺雯</div>
+				<div class="item-info">我吹过你吹过的风，这算不算相拥，我走过你走过的路，这算不算相逢</div>
+			</div>
+		</div>
+	</body>
+</html>

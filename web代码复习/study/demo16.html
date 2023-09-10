@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>天猫商城登陆页面</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.container {
+				width: 100%;
+				height: 600px;
+				background-color: #de0110;
+			}
+
+			.banner {
+				width: 1190px;
+				height: 600px;
+				/* border: 2px solid blue; */
+				margin: 0 auto;
+				background: url('images/tmall.png');
+			}
+
+			.login {
+				width: 350px;
+				height: 400px;
+				background-color: white;
+				float: right;
+				margin-top: 100px;
+				padding: 10px;
+				/* 怪异盒模型 使盒子宽度和高度不会发生改变*/
+				box-sizing: border-box;
+			}
+			.login .login-tab {
+				font-weight: 700;
+				/* background-color: lawngreen;? */
+				font-size: 0;
+				margin-bottom: 20px;
+			}
+
+			.login .login-tab span {
+				padding-bottom: 5px;
+				display: inline-block;
+				font-size: 16px;
+				margin-right: 10px;
+			}
+
+			.login .login-tab span.current {
+				border-bottom: 2px solid #000;
+			}
+
+			.input-wrap {
+				height: 42px;
+				width: 100%;
+				/* border: 1px solid red; */
+				margin-bottom: 20px;
+				position: relative;
+			}
+
+			.input-wrap input.txt {
+				width: 100%;
+				height: 42px;
+				/* 怪异盒模型,解决边框溢出问题 */
+				box-sizing: border-box;
+				outline: none;
+				border: 1px solid #ddd;
+				padding-left: 50px;
+			}
+
+			.input-wrap input.txt:hover {
+				border: 1px solid #de0110;
+			}
+
+			.input-wrap input.user-phone {
+				padding-left: 120px;
+			}
+
+			.input-wrap i {
+				width: 40px;
+				height: 40px;
+				background-color: #ddd;
+				display: block;
+				position: absolute;
+				top: 1px;
+				left: 1px;
+			}
+
+			.input-wrap i.icon-phone {
+				background-image: url('images/icon-phone.png');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+
+			.input-wrap i.icon-yzm {
+				background-image: url('images/icon-number.png');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			.input-wrap i.icon-id {
+				background-image: url('images/icon-user.png');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.input-wrap i.icon-pwd {
+				background-image: url('images/icon-pwd.png');
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.input-wrap span.icon-send {
+				position: absolute;
+				height: 40px;
+				display: inline-block;
+				right: 10px;
+				top: 0px;
+				color: #666;
+				font-size: 14px;
+				/* background-color: red; */
+				line-height: 40px;
+				cursor: pointer;
+			}
+
+			.input-wrap .select-wrap {
+				width: 65px;
+				height: 40px;
+				/* background-color: aqua;*/
+				/* border: 1px solid red; */
+				position: absolute;
+				left: 50px;
+				top: 1px;
+			}
+
+			.input-wrap .select-wrap select {
+				width: 65px;
+				height: 40px;
+				border: 0;
+				outline: none;
+				color: rgba(0, 0, 0, 0);
+				background: url('images/icon-select.png') no-repeat 40px 8px;
+			}
+
+			.input-wrap .select-wrap select option {
+				color: #000;
+			}
+
+			.input-wrap .select-wrap span {
+				width: 65px;
+				height: 40px;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				/* background-color: #ddd; */
+				font-size: 14px;
+				line-height: 40px;
+				/* 此属性不常用  可解决覆盖层问题*/
+				pointer-events: none;
+			}
+
+			.input-wrap button {
+				width: 100%;
+				height: 40px;
+				border: 1px solid #de0110;
+				background-color: #de0110;
+				color: white;
+				font-size: 16px;
+				border-radius: 5px;
+			}
+
+			.input-wrap a {
+				font-size: 14px;
+				color: #666;
+				margin-right: 5px;
+			}
+
+			.input-wrap a:hover {
+				color: #de0110;
+			}
+
+			.links {
+				text-align: right;
+				font-size: 0;
+		 	}
+		.pwd-login{
+			display: none;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="banner">
+				<div class="login">
+					<div class="login-tab">
+						<span class="current">密码登录</span>
+						<span>短信登录</span>
+					</div>
+					<!-- 密码登录 -->
+					<div class="pwd-login">
+						<form action="">
+							<div class="input-wrap">
+								<input type="text" class="txt" placeholder="会员名/邮箱/手机号">
+								<i class="icon-id"></i>
+
+							</div>
+							<div class="input-wrap">
+								<input type="password" class="txt" placeholder="请输入登录密码">
+								<i class="icon-pwd"></i>
+							</div>
+							<div class="input-wrap">
+								<div class="input-wrap links">
+									<a href="">忘记密码</a>
+									<a href="">忘记用户</a>
+									<a href="">免费注册</a>
+								</div>
+						</form>
+					</div>
+					<!-- 短信登录 -->
+					<div class="sms-login">
+						<form action="">
+							<div class="input-wrap">
+								<input type="text" class="txt user-phone" placeholder="请输入手机号">
+								<i class="icon-phone"></i>
+								<div class="select-wrap">
+									<span>+86</span><!-- 此处要用js实现 -->
+									<select name="" id="">
+										<option value="+86">+86中国大陆</option>
+										<option value="+886">+886中国台湾</option>
+										<option value="+853">+853中国澳门</option>
+										<option value="+82">+82韩国</option>
+										<option value="+81">+81日本</option>
+										<option value="+1">+1美国</option>
+										<option value="+1">+1加拿大</option>
+										<option value="+44">+44英国</option>
+										<option value="+61">+61澳大利亚</option>
+										<option value="+60">+60马来西亚</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-wrap">
+								<input type="text" class="txt" placeholder="请输入验证码">
+								<i class="icon-yzm"></i>
+								<span class="icon-send">发送验证码</span>
+							</div>
+							<div class="input-wrap">
+								<button>登录</button>
+							</div>
+							<div class="input-wrap links">
+								<a href="">忘记密码</a>
+								<a href="">忘记用户</a>
+								<a href="">免费注册</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

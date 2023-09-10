@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>flex弹性布局-今日头条首页热门视频栏</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			.show-monitor {
+				width: 320px;
+				height: 600px;
+				/* border: 2px solid red; */
+				margin: 50px 0px 0px 50px;
+			}
+
+			.panel-head {
+				display: flex;
+				/* height: 100px; */
+				/* 解除图标变形 */
+				align-items: center;
+			}
+
+			.panel-head span.panel-head-title {
+				/* 占满全部空间 */
+				flex-grow: 1;
+				font-size: 20px;
+				margin-left: 10px;
+			}
+
+			.panel-head .panel-head-sx {
+				font-size: 16px;
+				color: red;
+				margin-left: 5px;
+			}
+
+			.panel-con {
+				height: 94px;
+				/* background-color: antiquewhite; */
+				margin-top: 20px;
+				display: flex;
+			}
+
+			.panel-con .panel-con-img {
+				width: 126px;
+				/* 高度自动继承 */
+				/* height: 94px; */
+				/* background-color: aqua; */
+				margin-right: 10px;
+				flex-shrink: 0;
+			}
+
+			.panel-con .panel-con-img img {
+				width: 100%;
+				height: 100%;
+				/* 裁剪图片 防止变形 */
+				object-fit: cover;
+			}
+
+			.panel-con .panel-con-txt {
+				/* background-color: aquamarine; */
+				/* 占满剩余空间 */
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+				text-overflow: ellipsis;
+			}
+			.panel-con .panel-con-txt a{
+				font-size: 16px;
+				color: #222;
+				/* 超过44px文字不再显示 */
+				max-height: 44px;
+				overflow: hidden;
+				line-height: 22px;
+				/* 弹性伸缩盒子模型显示 */
+				display: -webkit-box;
+				/* 设置或检索伸缩盒子对象的子元素的排列方式 */
+				-webkit-box-orient: vertical;
+				/* 限制在一个块级元素显示的文本的行数 */
+				-webkit-line-clamp: 2;
+				/* 文本溢出显示省略号 */
+				text-overflow: ellipsis;
+			}
+			.panel-con .panel-con-txt span.like{
+				font-size: 12px;
+				background-color: #fff2f2;
+				color: #f04142;
+				/* 消除占满整行现象 变为内容实际所占宽度*/
+				align-self: flex-start;
+				padding: 3px 6px;
+				border-radius: 5px;
+				margin-top: 5px;
+			}
+			.panel-con .panel-con-txt .desc{
+				font-size: 14px;
+				color: #999;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="show-monitor">
+			<div class="panel-head">
+				<img src="images/icon-play.png" alt="" width="22">
+				<span class="panel-head-title">热门视频</span>
+				<img src="images/icon-sx2.png" alt="" width="16">
+				<span class="panel-head-sx">换一换</span>
+			</div>
+			<div class="panel-con">
+				<div class="panel-con-img">
+					<a href=""><img src="images/toutiao-01.jpeg" alt=""></a>
+				</div>
+				<div class="panel-con-txt">
+					<a href="">司马南：中国与俄罗斯的战线</a>
+					<span class="like">1万评论</span>
+					<div class="desc">
+						<span>148万次观看</span>
+						<span>司马南频道</span>
+					</div>
+				</div>
+			</div>
+			<div class="panel-con">
+				<div class="panel-con-img">
+					<a href=""><img src="images/toutiao-02.jpeg" alt=""></a>
+				</div>
+				<div class="panel-con-txt">
+					<a href="">无论做什么鱼：最忌放盐和料酒研制，大厨教你绝招.</a>
+					<span class="like">1万评论</span>
+					<div class="desc">
+						<span>148万次观看</span>
+						<span>司马南频道</span>
+					</div>
+				</div>
+			</div>
+			<div class="panel-con">
+				<div class="panel-con-img">
+					<a href=""><img src="images/toutiao-03.jpeg" alt=""></a>
+				</div>
+				<div class="panel-con-txt">
+					<a href="">司马南：中国与俄罗斯的战线</a>
+					<span class="like">1万评论</span>
+					<div class="desc">
+						<span>148万次观看</span>
+						<span>司马南频道</span>
+					</div>
+				</div>
+			</div>
+			<div class="panel-con">
+				<div class="panel-con-img">
+					<a href=""><img src="images/toutiao-04.jpeg" alt=""></a>
+				</div>
+				<div class="panel-con-txt">
+					<a href="">司马南：中国与俄罗斯的战线</a>
+					<span class="like">1万评论</span>
+					<div class="desc">
+						<span>148万次观看</span>
+						<span>司马南频道</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

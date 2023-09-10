@@ -1,0 +1,446 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  position: relative;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: url(../images/bg.png) no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: PingFangSC-Regular;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.dz_zzc,.dz_zzc2 {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.dz_content {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px 0px rgba(159,176,196,0.3);
+  border-radius: 4px;
+  width: 520px;
+  padding: 18px 30px 30px;
+  margin: 10% auto 0;
+  position: relative;
+}
+.ndzhwjh {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+}
+.btn_box {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.form-errorTip {
+  position: absolute;
+  font-size: 14px;
+  color: #f00b41;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 16px;
+  bottom: 133px;
+}
+.btn_box button {
+  width: 76px;
+  height: 40px;
+  border-radius: 4px;
+  margin-left: 16px;
+  cursor: pointer;
+  border: none;
+}
+.btn_jihuo,.btn_zhmm {
+  background: #002954;
+  color: #fff;
+}
+.btn_quxiao {
+  border: 1px solid #cdcdcd;
+  background: #fff;
+}
+.dzwrap{
+  width: 600px;
+  height: 100vh;
+  background: rgba(0,0,0,0.3);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.logo{
+  position: absolute;
+  top: 50px;
+  left: 10%;
+}
+.logo img{
+  width: 246px;
+}
+.logo span{
+  display: inline-block;
+  position: absolute;
+  height: 38px;
+  line-height: 38px;
+  top: 15px;
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+  color: #fff;
+  font-size: 24px;
+  width: 150px;
+}
+.t_switch {
+  height: 28px;
+  position: absolute;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 3px;
+  right: 10%;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.language_switch {
+  width: 104px;
+  top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(12,74,249,0.30);
+}
+.t_switch_list {
+  padding: 5px 14px;
+  background: #ffffff;
+  box-shadow: 0 6px 6px -2px rgba(40, 75, 96, 0.18);
+  border-radius: 4px;
+}
+.dz_banquan{
+  font-size: 14px;
+  color: #404040;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+}
+.qrcode {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  background: url(../images/qcode.png);
+}
+.wrap {
+  width: 416px;
+  max-height: 531px;
+  min-height: 456px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 4px;
+  margin: 20% auto 0;
+}
+.right-icon{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.pass-type{
+  display: none;
+}
+.login-qrcode{
+  display: none;
+  padding-top: 50px;
+  text-align: center;
+}
+.main {
+  width: calc(100% - 76px);
+  min-height: 300px;
+  padding: 22px 38px;
+}
+.tabHead {
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+  font-size: 12px;
+  border-bottom: 1px solid #DEDEDE;
+}
+.mask-inner {
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -moz-transition: top ease 200ms;
+  -o-transition: top ease 200ms;
+  -webkit-transition: top ease 200ms;
+  transition: top ease 200ms;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+.tabHead span {
+  display: block;
+  width: 80px;
+  float: left;
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 20px;
+  padding: 8px 0;
+}
+.tabHead span.active{
+  border-bottom: 1px solid #2B6CDB;
+}
+.tabHead span a{
+  color: #34363E;
+  text-decoration: none;
+}
+.tabHead span.active a{
+  color: #2B6CDB;
+}
+.hide{
+  display: none;
+}
+.container .login-pc {
+  position: relative;
+}
+.container .help {
+  position: relative;
+  clear: both;
+  margin-top: 12px;
+  height: 26px;
+}
+.container .form {
+  margin-top: 10px;
+}
+.form .m-account, .form .m-phone {
+  border-radius: 5px;
+  background: #fff;
+}
+.form .m-account .item, .form .m-phone .item {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-radius: 4px;
+  height: 48px;
+  margin-top: 20px;
+}
+.form .m-account > div, .form .m-phone > div {
+  position: relative;
+  overflow: hidden;
+}
+.form .prex-icon {
+  position: absolute;
+  top: 4px;
+  left: 2px;
+}
+.form .m-account > div > input, .form .m-phone > div > input {
+  width: 70%;
+  border: none;
+  height: 48px;
+  margin-left: 48px;
+  outline: none;
+}
+.form .suffix-icon.eyehide {
+  background: url(../images/eyehide.png) no-repeat;
+}
+.form .suffix-icon {
+  position: absolute;
+  top: 19px;
+  cursor: pointer;
+  width: 18px;
+  height: 15px;
+}
+#rememberMe{
+  margin-left: 0;
+  height: auto;
+}
+.container .btn {
+  margin-top: 30px;
+}
+.container .btn .login-btn {
+  width: 100%;
+  height: 50px;
+  background: #2368de;
+  border-radius: 4px;
+  display: block;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 12px;
+}
+.container .help .fo-password {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #73757E;
+  float: left;
+}
+.container .help .activation-account {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #0c4af9;
+  float: right;
+}
+.container .help .activation-account span{
+  display: none;
+}
+.container .footer {
+  width: calc(100% - 64px);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 58px;
+  background: #F3F8FE;
+  border-radius: 0 0 6px 6px;
+  display: flex;
+  align-items: Center;
+  padding: 0 32px;
+}
+.container .footer .ways{
+  width: 60px;
+  float: left;
+}
+.container .footer .ways img{
+  width: 32px;
+}
+.banquan{
+  width: 416px;
+  margin: 20px auto 0;
+  font-size: 12px;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+.form .captcha .captcha-img {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 86px;
+  height: 30px;
+}
+.form .code .get-code{
+  text-decoration: none;
+  background: none;
+  color: #2B6CDB;
+  padding: 6px 8px;
+  margin-top: 6px;
+  cursor: pointer;
+  font-family: 'Microsoft YaHei';
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.m-rememberMe{
+  margin-top: 8px;
+}
+
+
+.qr_scan_box {
+  width: 380px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.qr_scan_code{
+  text-align: center;
+}
+.qr_scan_code img{
+  margin: 50px auto 10px;
+  width: 235px;
+  height: 235px;
+}
+.qr_scan_Invalid {
+  width: 235px;
+  height: 235px;
+  position: absolute;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#e5ffffff, endColorstr=#e5ffffff);
+  top: 0;
+  margin: 45px 0 0 74px;
+}
+.qr_scan_Invalid img {
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+.qr_scan_success{
+  margin-top: 90px;
+}
+.qr_scan_success img{
+  margin: 50px auto;
+  width: 70px;
+  height: 70px;
+}

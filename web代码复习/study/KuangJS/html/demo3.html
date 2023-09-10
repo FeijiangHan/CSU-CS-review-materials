@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>数组</title>
+		<script type="text/javascript">
+			'user strict';
+			let arr=[1,2,3,4,5,6];
+			// 长度
+			console.log(arr.length);
+			console.log(arr[0]);
+			console.log(arr);
+			// 长度具有可变性
+			// arr.length=10;
+			// console.log(arr);
+			// console.log(arr.length);
+			// 长度赋值过小数组发生丢失现象
+			// arr.length=3;
+			// console.log(arr);
+			// console.log(arr.length);
+			// 通过元素获得下标索引
+			console.log(arr.indexOf(3));
+			// 截取数组的一部分,返回一个新的数组
+			console.log(arr.slice(3));
+			console.log(arr.slice(1,5));
+			// 尾部添加元素
+			arr.push('a','b');
+			console.log(arr);
+			// 弹出尾部元素
+			arr.pop();
+			console.log(arr);
+			// 头部添加元素
+			arr.unshift('c','d');
+			console.log(arr);
+			// 头部弹出元素
+			arr.shift();
+			console.log(arr);
+			// 数组排序
+			arr.sort();
+			console.log(arr);
+			// 元素反转
+			arr.reverse();
+			console.log(arr);
+			// 数组拼接
+			console.log(arr.concat([1,2,3]));
+			console.log(arr);
+			// 连接符
+			console.log(arr.join('-'));
+			// 多维数组
+			arr=[[1,2,3],[4,5,6],['7','8','9']];
+			console.log(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>函数</title> 
+		<script type="text/javascript">
+			'user strict';
+			// 1.定义绝对值函数  
+			function abs(x){
+				if(x>=0)
+				{
+					return x;
+				}else {
+					return -x;
+				}
+			}// 如果没有执行return，函数执行完也会返回结果，结果就是undefined
+			//2. 绝对值函数(匿名函数)
+			let t=function(x){
+				if(x>=0){
+					// if(typeof x!=='number')
+					// 	throw 'Not a number';
+					return x;
+				}else {
+					return -x;
+				}
+			}
+			// 调用函数,JavaScript可以任意个参数，也可以不传递参数
+			t('1');
+			// arguments(传递进来的所有的参数，是一个数组)的使用
+			var arr=[1,2,3,4,5,6];
+			function f(x){
+				console.log("x=>"+x);
+				for(let i=0;i<arguments.length;++i)
+					console.log(arguments[i]);
+			}
+			f(arr);
+			// rest(获取除了已经定义的参数之外的所有参数)
+			function f1(x,...rest){
+				console.log("x=>"+x);
+				console.log(rest);
+			}
+			f1(arr,123);
+			
+			function qj(){
+				var x=1;
+				function qj2() {
+					var x='A';
+					console.log('inner'+x);
+				}
+				console.log('outer'+x);
+				qj2();
+			}
+			qj();
+			
+			// 全局变量
+			// 默认所有全局变量，都会自动绑定在window对象
+			var m='123';
+			console.log(m);// 123
+			console.log(window.m)// 123
+			
+			var GuoZ={}// 全局变量域
+			GuoZ.name="GuoZihan";
+			GuoZ.age="22";
+			GuoZ.sex="男";
+			console.log(GuoZ);
+			
+			// let与var
+			function f2()
+			{
+				for(var i=0;i<100;++i)
+					console.log(i);
+				console.log(i+1);
+			}
+			f2();
+			function f3()
+			{
+				for(let i=0;i<100;++i)
+					console.log(i)
+				console.log(i+1);
+			}
+			// f3();i is not defined 最好局部变量都用let
+			
+			// 常量 const
+			const PI='3.14';
+			console.log(PI);
+			// PI='3.12';  Assignment to constant variable.
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

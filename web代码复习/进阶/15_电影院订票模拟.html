@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #242333;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            /*把body撑到和屏幕一样宽*/
+            height: 100vh;
+        }
+        .selector {
+            border: 1px solid red;
+            padding: 1rem;
+        }
+        /*对select设置样式而非对option设置样式*/
+        .selector select {
+           padding: 0.3rem 1rem;
+           border: none;
+           background-color: #fff;
+           border-radius: 3px;
+        }
+        .state  {
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+            padding: 1px;
+            border: 1px solid red;
+        }
+        .seat {
+            background-color: rgb(0, 239, 76);
+            height: 12px;
+            width: 15px;
+            margin: 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .empty {
+            background-color: rgb(23, 224, 97);
+        }
+        .selected {
+            background-color: orange;
+        }
+        .occupied {
+            background-color: red;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .seat:nth-of-type(2) {
+            margin-right: 20px;
+        }
+        .seat:nth-last-of-type(2) {
+            margin-left: 20px;
+        }
+        .screen {
+            background-color: #fff;
+            height: 70px;
+            width: 100%;
+            margin: 15px 0;
+            transform: rotateX(-45deg);
+            box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+          }
+    </style>
+</head>
+<body>
+    
+        <div class="selector">
+            <label for="movie">Pick a movie</label>
+            <select name="movie" id="movie">
+                <option value="10">流浪地球 10￥</option>
+                <option value="20">满江红 20￥</option>
+                <option value="30">熊出没 30￥</option>
+                <option value="40">阿凡达 40￥</option>
+            </select>
+        </div>
+    
+        <div class="state">
+            <div class="seat empty"></div>
+            <div class="seat selected"></div>
+            <div class="seat occupied"></div>
+        </div>
+    
+        
+    
+        <div class="seats">
+            <div class="screen">
+           
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+              </div>
+              <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+              </div>
+        </div>
+    
+        <div class="selection-msg">
+    
+        </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, input, label {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 400px;
+            margin: 100px auto 0; /*居中*/
+            padding: 1rem;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        label {
+            display: block;
+            color: grey;
+        }
+        .collector {
+        }
+        .head{
+            text-align: center;
+        }
+        .form-item {
+            /*居中输入框和label: 外部box的宽度+margin自动调节*/
+            width: 280px;
+            margin: 0 auto 1.5rem; /*居中*/
+        }
+        input {
+            width: 280px;
+            border: 1px solid lightgrey;
+            border-radius: 6px;
+            padding: 0.8rem; /*用padding把input撑起来*/
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #3498db;
+            border: 2px solid #3498db;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 20px;
+            
+            display: block;
+            width: 100%;
+        }
+        small {
+            /*空间占据*/
+            visibility: hidden;
+        }
+        /*错误信息*/
+        .error input{
+            border: 1.5px solid rgb(247, 44, 4);
+            display: block;
+        }
+        .error small {
+            color:rgb(247, 44, 4);
+            visibility:visible;
+        }
+        /*正确消息*/
+        .success input{
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="head">收集表单</h2>
+        <form class="collector" id="form">
+            <div class="form-item">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="请输入用户名">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-item">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="请输入邮箱">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-item">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="请输入密码">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-item">
+                <label for="password2">Confirm Password</label>
+                <input type="password"id="password2">
+                <small>Error message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const username = document.getElementById('username');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const password2 = document.getElementById('password2');
+        form.addEventListener('submit', (e) => {
+            console.log("Submit")
+            // 使用e.preventDefault()可以防止表单的默认提交行为，
+            // 从而允许我们使用JavaScript来处理表单数据并采取其他操作
+            e.preventDefault();
+            // 判断是否都输入的数据
+            if (!checkIsValid([username, email, password, password2])) {
+                // 检查用户名长度和邮箱长度
+                checkLength(username, 3, 15);
+                checkLength(password, 6, 25);
+                // 邮箱格式
+                checkEmail(email);
+                // 密码是否相同
+                console.log("检查是否相同")
+                checkPasswordsMatch(password, password2);
+            }
+        })
+        
+
+        // Get fieldname
+        function getFieldName(input) {
+            return input.id.charAt(0).toUpperCase() + input.id.substr(1);
+        }
+  
+        function checkIsValid(params) {
+            params.forEach((input) => {
+                // 只输入空格也不行, trim去除两端空格
+                if (input.value.trim()==="") {
+                    // 显示错误
+                    showError(input, `Please enter a valid ${getFieldName(input)}`);
+                    return false;
+                } else {
+                    showSuccess(input);
+                    return true;
+                }
+            })
+        }
+
+        // Show input error message
+        function showError(input, message) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-item error';
+            const small = formControl.querySelector('small');
+            small.innerText = message;
+        }
+        
+        // Show success outline
+        function showSuccess(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'form-item success';
+        }
+
+        // Check email is valid
+        function checkEmail(input) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (re.test(input.value.trim())) {
+            showSuccess(input);
+            } else {
+            showError(input, 'Email is not valid');
+            }
+        }
+
+        // Check input length
+        function checkLength(input, min, max) {
+            if (input.value.length < min) {
+            showError(
+                input,
+                `${getFieldName(input)} must be at least ${min} characters`
+            );
+            } else if (input.value.length > max) {
+            showError(
+                input,
+                `${getFieldName(input)} must be less than ${max} characters`
+            );
+            } else {
+            showSuccess(input);
+            }
+        }
+        
+        // Check passwords match
+        function checkPasswordsMatch(input1, input2) {
+            console.log(88);
+            if (input1.value !== input2.value) {
+                showError(input2, 'Passwords do not match');
+            }
+        }
+    </script>
+</body>
+</html>

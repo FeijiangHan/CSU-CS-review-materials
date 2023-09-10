@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>loding加载动画</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.loading {
+				width: 200px;
+				height: 200px;
+				background-color: skyblue;
+				margin: 100px auto 0;
+				position: relative;
+			}
+
+			.loading .item {
+				width: 20px;
+				height: 20px;
+				background-color: rgba(255,255,255,0.2);
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -10px;
+				transform-origin: 10px 100px;
+				border-radius: 50%;
+				/* 存在逻辑运算 */
+				/* 使用自定义属性来进行运算 */
+				transform: rotate(calc(var(--i)*40deg));
+				animation: loading 1s ease infinite;
+				animation-delay: calc(var(--i)*0.11s);
+			}
+			@keyframes loading {
+				/* 0-1s */
+				%0,%50{
+					background-color: rgba(255,255,255,0.2);
+				}
+				/* 时间50.5%-100% */
+				50.5%,100%{
+					background-color: #fff;
+				}
+			}
+			/* .loading .item:nth-child(1) {
+				animation-delay: 0s;
+			}
+
+			.loading .item:nth-child(2) {
+				animation-delay: 0.11s;
+			}
+
+			.loading .item:nth-child(3) {
+				animation-delay: 0.22s;
+			}
+
+			.loading .item:nth-child(4) {
+				animation-delay: 0.33s;
+			}
+
+			.loading .item:nth-child(5) {
+				animation-delay: 0.44s;
+			}
+
+			.loading .item:nth-child(6) {
+				animation-delay: 0.55s;
+			}
+
+			.loading .item:nth-child(7) {
+				animation-delay: 0.66s;
+			}
+
+			.loading .item:nth-child(8) {
+				animation-delay: 0.77s;
+			}
+			.loading .item:nth-child(9) {
+				animation-delay: 0.88s;
+			} */
+		</style>
+	</head>
+	<body>
+		<div class="loading">
+			<div class="item" style="--i:0"></div>
+			<div class="item" style="--i:1"></div>
+			<div class="item" style="--i:2"></div>
+			<div class="item" style="--i:3"></div>
+			<div class="item" style="--i:4"></div>
+			<div class="item" style="--i:5"></div>
+			<div class="item" style="--i:6"></div>
+			<div class="item" style="--i:7"></div>
+			<div class="item" style="--i:8"></div>
+		</div>
+	</body>
+</html>

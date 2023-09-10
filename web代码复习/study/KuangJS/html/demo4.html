@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			'user strict';
+			// Map集合
+			var map = new Map([
+				['tom', 100],
+				['jack', 90],
+				['haha', 80]
+			]);
+			// 通过key获得value
+			var name = map.get('tom');
+			console.log(name);
+			// 增加
+			map.set('admin', 123456);
+			console.log(map);
+			// 删除
+			map.delete('tom');
+			console.log(map);
+			// Set集合，无需不重复集合
+			var set = new Set([3, 1, 1, 1, 1, 1]); // 会自动去除重复元素
+			console.log(set);
+			// 增加
+			set.add(4);
+			console.log(set);
+			// 删除
+		    set.delete(1);
+			console.log(set);
+			// 判断是否包含某个元素
+			console.log(set.has(3));
+			for(let t of map)
+			{
+				console.log(t);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

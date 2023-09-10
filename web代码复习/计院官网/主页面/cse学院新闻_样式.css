@@ -1,0 +1,452 @@
+.two-banner {
+	width:100%;
+	position:relative
+}
+.two-banner img {
+	width:100%;
+	height:315px
+}
+.two-nav {
+	width:252px;
+	float:left;
+	margin-top:-140px;
+	position:relative;
+	z-index:99
+}
+.two-nav-box {
+	width:100%;
+	height:140px;
+	overflow:hidden;
+	background:url(../images/navbck.jpg) no-repeat;
+	color:#fff
+}
+.nav-text {
+	width:180px;
+	height:110px;
+	margin-top:15px;
+	margin-left:20px;
+	border-right:5px solid #fff;
+	overflow:hidden
+}
+.nav-text span {
+	display:block;
+	font-size:14px;
+	margin:20px 0 5px;
+	font-family:arial!important;
+	text-transform:uppercase
+}
+.nav-text p {
+	font-size:22px;
+	font-weight:bold
+}
+.two-nav li a {
+	display:block;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #cecece;
+	padding:0 30px;
+	background:#ebebeb url(../images/icon.png) no-repeat;
+	background-position:220px center
+}
+.two-nav li a:hover,.two-nav li.active a {
+	color:#0d5690;
+	background:#ebebeb url(../images/icon00.png) no-repeat;
+	background-position:220px center
+}
+.two-con {
+	width:950px;
+	overflow:hidden;
+	float:right
+}
+.address {
+	width:100%;
+	height:60px;
+	line-height:60px;
+	color:#b2b2b2
+}
+.address a {
+	font-size:14px;
+	margin:0 5px;
+	color:#b2b2b2
+}
+.address a:hover {
+	text-decoration:underline
+}
+.address img {
+	vertical-align:baseline;
+	margin-right:10px
+}
+.two-title {
+	width:100%;
+	height:49px;
+	border-bottom:1px solid #cecece;
+	margin-bottom:30px
+}
+.two-title p {
+	display:inline-block;
+	border-bottom:4px solid #fa8513;
+	font-size:22px;
+	padding-bottom:14px;
+	margin-bottom:0
+}
+.leader dl {
+	width:380px;
+	overflow:hidden;
+	float:left;
+	margin-right:50px
+}
+.leader dl dt {
+	width:160px;
+	float:left
+}
+.leader dl dt img {
+	width:100%;
+	height:230px
+}
+.leader dl dd {
+	width:200px;
+	float:right
+}
+.leader dd h2 {
+	font-size:24px;
+	color:#000;
+	margin-top:10px
+}
+.leader dd div {
+	color:#333;
+	margin:20px 0 10px
+}
+.leader dd p {
+	line-height:24px;
+	width:100%;
+	height:120px;
+	overflow:hidden;
+	color:#666
+}
+.details-time {
+	text-align:center;
+	margin:20px 0 30px;
+	font-size:14px
+}
+.details-time span {
+	margin-left:10px
+}
+.details-style h1 {
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+	line-height:50px
+}
+.details-style p {
+	text-indent:2em;
+	margin-bottom:30px;
+	line-height:30px
+}
+.details-style img {
+	margin:10px auto;
+	max-width:100%
+}
+.details-img {
+	text-align:center
+}
+.download li {
+	width:100%;
+	line-height:50px;
+	border-bottom:1px dotted #e0e0e0;
+	overflow:hidden
+}
+.download li a {
+	display:block;
+	width:800px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	padding-left:25px;
+	float:left;
+	background:url(../images/more1.png) 2px center no-repeat
+}
+.download li span {
+	float:right
+}
+.download li:hover a {
+	color:#0d5690
+}
+.teaching li {
+	width:170px;
+	float:left;
+	margin-right:90px;
+	margin-bottom:35px
+}
+.teaching li:nth-child(4),.teaching li:nth-child(8),.teaching li:nth-child(12) {
+	margin-right:0
+}
+.teaching li img {
+	width:100%;
+	height:240px
+}
+.teaching li p {
+	width:100%;
+	height:35px;
+	line-height:35px;
+	padding:0 10px;
+	overflow:hidden;
+	background-color:#eee;
+	text-align:center
+}
+.teaching li:hover p {
+	color:#0d52c4
+}
+.teaching dl {
+	width:100%;
+	overflow:hidden;
+	margin-top:60px
+}
+.teaching dl dd {
+	width:625px;
+	float:left
+}
+.teaching dd h2 {
+	color:#000;
+	font-weight:bold;
+	font-size:30px;
+	margin:10px 0 20px
+}
+.teaching dd h2 {
+	font-weight:normal;
+	font-size:26px
+}
+.teaching dd h3 {
+	border-left:7px solid #108bcb;
+	padding-left:10px;
+	margin:40px 0 20px;
+	font-size:20px
+}
+.teaching dd p {
+	line-height:30px;
+	font-size:14px;
+	margin-bottom:0
+}
+.teaching dl dt {
+	width:276px;
+	float:right;
+	margin-right:5px
+}
+.teaching dl dt img {
+	width:100%;
+	height:auto
+}
+.nav-style {
+	width:100%;
+	height:50px;
+	line-height:50px;
+	background-color:#0d8ff6;
+	color:#fff;
+	padding:0 30px;
+	overflow:hidden
+}
+.con-style {
+	width:948px;
+	float:left;
+	position:relative;
+	z-index:99;
+	margin-top:-140px
+}
+.teachers-list {
+	width:100%;
+	min-height:140px;
+	background-color:rgba(255,255,255,.8);
+	padding:0 35px;
+	overflow:hidden
+}
+.checkbox-box {
+	width:100%;
+	margin-top:20px
+}
+.checkbox-box p {
+	width:70px;
+	display:inline-block;
+	margin-left:30px;
+	margin-bottom:0
+}
+.teachers-title-style {
+	font-size:24px;
+	margin:25px 35px
+}
+.teachers-box {
+	padding:0 35px
+}
+.teachers-list-style {
+	width:100%;
+	overflow:visible;
+	margin-bottom:30px
+}
+.teachers-title {
+	width:100%;
+	overflow:hidden;
+	margin-bottom:30px
+}
+.teachers-title li {
+	float:left
+}
+.teachers-title li a {
+	display:inline-block;
+	padding:4px 8px;
+	margin-right:4px;
+	border-radius:3px
+}
+.teachers-title li.teachers-active a,.teachers-title li:hover a {
+	color:#fff;
+	background-color:#f98700
+}
+.teachers-select {
+	border:1px solid #d1d1d1;
+	border-radius:3px;
+	width:30px;
+	height:30px;
+	margin-bottom:10px;
+	text-align:center;
+	line-height:30px
+}
+.teachers-list-style li {
+	border-bottom:1px solid #e9e9e9;
+	margin-bottom:20px
+}
+.teachers-name a {
+	color:#626262;
+	display:inline-block;
+	width:80px;
+	margin-right:40px;
+	margin-bottom:20px
+}
+.teachers-name a:hover {
+	color:#0d8ff6
+}
+@media(max-width:768px) {
+	.container {
+	padding:0 10px
+}
+.address {
+	padding:0 10px
+}
+.two-banner {
+	width:100%
+}
+.two-banner img {
+	height:auto
+}
+.menu-show {
+	width:15px;
+	height:15px;
+	position:absolute;
+	top:12px;
+	right:14px
+}
+.menu-show img {
+	width:100%;
+	height:100%
+}
+.tbBottom {
+	display:none
+}
+.two-nav {
+	width:100%;
+	margin-top:15px
+}
+.two-nav-box {
+	height:50px;
+	background-size:100% auto
+}
+.nav-text {
+	height:auto;
+	border:0;
+	margin-top:0
+}
+.nav-text span {
+	display:none
+}
+.nav-text p {
+	font-size:20px;
+	margin-bottom:0;
+	line-height:50px;
+	font-weight:normal
+}
+.two-nav ul {
+	display:none
+}
+.two-nav li a {
+	background-position:330px center
+}
+.two-nav li a:hover,.two-nav li.active a {
+	background-position:330px center
+}
+.two-con {
+	width:100%;
+	float:none
+}
+.leader dl {
+	width:100%
+}
+.leader dl dt {
+	width:130px
+}
+.leader dl dt img {
+	height:187px
+}
+.leader dl dd {
+	width:calc(100% - 150px)
+}
+.leader dd p {
+	height:96px
+}
+.details-style h1 {
+	font-size:20px;
+	line-height:40px
+}
+.download li a {
+	width:100%;
+	float:none
+}
+.download li span {
+	display:none
+}
+.teaching li {
+	width:48%;
+	margin-right:0
+}
+.teaching li:nth-child(even) {
+	float:right
+}
+.teaching dl dt {
+	float:none;
+	margin:10px auto
+}
+.teaching dl {
+	margin-top:40px
+}
+.teaching dl dd {
+	width:100%;
+	float:none
+}
+.teaching dd h2 {
+	margin-top:30px
+}
+.con-style {
+	width:100%;
+	float:none;
+	margin-top:20px
+}
+.teachers-list {
+	height:auto;
+	padding:0 10px
+}
+.checkbox-box p {
+	margin-left:10px
+}
+.teachers-title-style {
+	margin:25px 10px
+}
+.teachers-box {
+	padding:0 10px
+}
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>音乐排行榜效果</title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			.music-top {
+				width: 800px;
+				/* height: 700px; */
+				/* border: 2px solid red; */
+				margin: 50px auto 0;
+			}
+
+			/*
+			border-collapse: collapse; 
+			是一个CSS属性，它用于控制表格边框的合并方式。
+			默认情况下，相邻单元格的边框会分开显示，这会导致表格看起来有很多不必要的线条。
+			而当设置了 border-collapse: collapse; 之后，相邻单元格的边框会合并在一起显示，从而让表格看起来更加整洁。
+			*/
+			table {
+				width: 100%;
+				border-spacing: 0; /*设置单元格之间的间距为0，使表格更加紧凑。*/
+				border-collapse: collapse;
+			}
+
+			table tr th {
+				height: 80px;
+			}
+
+			table tr td {
+				height: 80px;
+			}
+
+			.col1 {
+				width: 60px;
+			}
+
+			.col2 {
+				width: 80px;
+			}
+
+			.col3 {
+				width: auto;
+			}
+
+			.col4 {
+				width: 120px;
+			}
+
+			.col5 {
+				width: 60px;
+			}
+
+			/* 表格奇数行 */
+			table tr:nth-of-type(odd) {
+				background-color: white;
+			}
+
+			/* 表格偶数行 */
+			table tr:nth-of-type(even) {
+				background-color: #f7f7f7;
+			}
+
+			table tr th {
+				background-color: #f5f5f5;
+				color: rgb(0, 0, 0);
+				text-align: left;
+			}
+
+			/*选择表格中的第一列*/
+			table tr td:nth-child(1) {
+				font-size: 24px;
+				color: #333;
+				text-align: center;
+			}
+			table tr td:nth-child(1) span {
+				color: #ff4222;
+			}
+
+			table tr td:nth-child(2) {
+				font-size: 12px;
+				color: #999;
+			}
+
+			/*
+			默认情况下，<img> 元素是内联元素（inline element），不是块级元素（block element）。
+			*/
+			table tr td:nth-child(2) img {
+				display: block;
+				margin-left: 10px;
+			}
+
+			table tr td:nth-child(4),
+			table tr td:nth-child(5) {
+				font-size: 14px;
+				color: #999;
+			}
+
+			.con {
+				height: 70px;
+				position: relative;
+			}
+			/*
+white-space: nowrap ：这个属性用于防止文本在容器中自动换行，而是强制在同一行显示。
+overflow: hidden ：这个属性用于控制容器中内容超出容器范围时的显示方式。将其设置为 hidden 表示超出部分将被隐藏。
+text-overflow: ellipsis ：这个属性用于控制文本超出容器后的省略方式。将其设置为 ellipsis 表示超出部分将被用省略号表示。
+			*/
+			.con .txt {
+				height: 70px;
+				line-height: 70px;
+				position: absolute;
+				left: 90px;
+				top: 0;
+				right: 0;
+				/* 处理文字超出部分 */
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				
+			}
+			.con .txt a{
+				color: #333;
+			}
+
+			.con .txt span {
+				color: #999;
+			}
+
+			.con .button {
+				width: 140px;
+				height: 36px;
+				/* border: 2px solid blue; */
+				position: absolute;
+				right: 0;
+				top: 17px;
+				display: none;
+			}
+
+			.con .button i {
+				/*限制只显示一行图标*/
+				width: 36px;
+				height: 36px;
+				/* border: 1px solid red; */
+				display: inline-block;
+				/*设置一张大图片, 后续通过调整background-position的值显示不同的图标*/
+				background-image: url('images/icon-music.png');
+			}
+
+			.con .button i.play {}
+
+			.con .button i.add {
+				background-position: 0 -80px;
+			}
+
+			.con .button i.word {
+				background-position: 0 -40px;
+			}
+
+			.con .button i.play:hover {
+				background-position: -40px 0;
+			}
+
+			.con .button i.add:hover {
+				background-position: -40px -80px;
+			}
+
+			.con .button i.word:hover {
+				background-position: -40px -40px;
+			}
+
+			table tr:hover .con .button {
+				display: block;
+			}
+
+			table tr:hover .con .txt {
+				right: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="music-top">
+			<table>
+				<colgroup>
+					<col span="1" class="col1">
+					<col span="1" class="col2">
+					<col span="1" class="col3">
+					<col span="1" class="col4">
+					<col span="1" class="col5">
+				</colgroup>
+				<tr>
+					<th></th>
+					<th>排行</th>
+					<th>歌曲</th>
+					<th>歌手</th>
+					<th>时长</th>
+				</tr>
+				<tr>
+					<td><span>1</span></td>
+					<td>
+						<img src="images/up-jiantou.png" alt="">
+						158%
+					</td>
+					<td>
+						<div class="con">
+							<img src="images/music-img1.webp" alt="" height="70">
+							<div class="txt">爱丫爱丫<span>《爱情是从告白开始的》电视剧插曲</span></div>
+							<div class="button">
+								<i class="play"></i>
+								<i class="add"></i>
+								<i class="word"></i>
+							</div>
+						</div>
+					</td>
+					<td>BY2</td>
+					<td>03:51</td>
+				</tr>
+				<tr>
+					<td><span>2</span></td>
+					<td>
+						<img src="images/up-jiantou.png" alt="">
+						128%
+					</td>
+					<td>
+						<div class="con">
+							<img src="images/music-img2.webp" alt="" height="70">
+							<div class="txt">春泥(女版)<span></span></div>
+							<div class="button">
+								<i class="play"></i>
+								<i class="add"></i>
+								<i class="word"></i>
+							</div>
+						</div>
+					</td>
+					<td>旺仔小乔</td>
+					<td>03:03</td>
+				</tr>
+				<tr>
+					<td><span>3</span></td>
+					<td>
+						<img src="images/up-jiantou.png" alt="">
+						118%
+					</td>
+					<td>
+						<div class="con">
+							<img src="images/music-img3.webp" alt="" height="70">
+							<div class="txt">孤勇者(Live)<span>《英雄联盟：双城》</span></div>
+							<div class="button">
+								<i class="play"></i>
+								<i class="add"></i>
+								<i class="word"></i>
+							</div>
+						</div>
+					</td>
+					<td>永彬Ryan.B</td>
+					<td>03:14</td>
+				</tr>
+				<tr>
+					<td><span>4</span></td>
+					<td>
+						<img src="images/up-jiantou.png" alt="">
+						108%
+					</td>
+					<td>
+						<div class="con">
+							<a href=""><img src="images/music-img4.webp" alt="" height="70"></a>
+							<div class="txt">
+								<a href="">
+									爱丫爱丫<span>《爱情是从告白开始的》电视剧插曲</span>
+								</a>
+								</div>
+							<div class="button">
+								<i class="play"></i>
+								<i class="add"></i>
+								<i class="word"></i>
+							</div>
+						</div>
+					</td>
+					<td>张韶涵/信</td>
+					<td>04:30</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字符串</title>
+		<script type="text/javascript">
+			'user strict';
+			let x=1;
+			console.log(x);
+			let j='a\'';
+			console.log(j);
+			// 多行字符串
+			let m=`123
+			hello
+			world
+			你好ya
+			你好`
+			console.log(m);
+			// 模板字符串
+			let name='qianjiang';
+			let age=3;
+			let msg=`你好呀，${name}`;
+			console.log(msg);
+			// 字符串长度
+			let student="student";
+			console.log(student.length);
+			// 字符串的可变性 不可变
+			console.log(student[0]);
+			student[0]=1;
+			console.log(student)
+			// 大小写转换
+			console.log(student.toUpperCase());
+			console.log(student.toLocaleLowerCase());
+			// 获取第一个指定字母的下标
+			console.log(student.indexOf('t'));
+			// 截取字符串
+			console.log(student.substring(1,2));
+			console.log(student.substring(1));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
