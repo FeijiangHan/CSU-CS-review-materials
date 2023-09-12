@@ -1,0 +1,240 @@
+body {
+  font-size: 16pt;
+}
+
+#modal-details {
+  font-size: 12pt;
+}
+
+.tooltip {
+  font-size: 16pt;
+}
+
+.tooltip.top {
+  padding: 9px 0;
+}
+.tooltip.top .tooltip-arrow {
+  margin-left: -10px;
+  border-width: 10px 10px 0;
+}
+
+textarea#title {
+ width: 100%;
+ max-height: 3.1ex;
+ font-weight: bold;
+ margin-top: 10px;
+}
+
+svg a:hover {
+  cursor: pointer;
+}
+
+svg #ring, svg #logsbg {
+  fill: #eeeeee;
+}
+
+svg .server {
+}
+
+svg .server path {
+  fill: none;
+  stroke: black;
+}
+
+svg .server.follower path {
+  stroke: #666666;
+}
+
+svg .server text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+svg .server.leader text.serverid {
+  fill: red;
+}
+
+svg .logs text.serverid.leader {
+  fill: red;
+}
+
+svg .server a,
+svg .server a:active,
+svg .server a:hover,
+svg .server a:focus,
+svg .server a:visited
+{
+  font-size: inherit;
+  text-decoration: none;
+}
+
+svg .server .votes .have {
+  fill: black;
+  stroke: black;
+}
+
+svg .server .votes .coming {
+  fill: gray;
+  stroke: black;
+}
+
+svg .server .votes .no {
+  fill: none;
+  stroke: black;
+}
+
+svg .message {
+  stroke-width: 3;
+}
+
+svg .message.RequestVote {
+  fill:   #66c2a5;
+  stroke: #66c2a5;
+}
+
+svg .message.AppendEntries {
+  fill:   #fc8d62;
+  stroke: #fc8d62;
+}
+
+svg .message.request circle {
+}
+
+svg .message.reply circle {
+  /* fill with no opacity so it's clickable */
+  fill-opacity: 0;
+}
+
+svg .logs text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+svg .log {
+  fill: none;
+  stroke: gray;
+}
+
+svg .entry rect {
+  fill: none;
+  stroke: black;
+  stroke-width: 3;
+}
+
+svg .entry.uncommitted rect {
+}
+
+svg .entry.committed rect {
+}
+
+svg .entry text {
+  text-anchor: middle;
+  dominant-baseline: central;
+  text-align: center;
+}
+
+svg #pause.paused {
+  fill:white;
+}
+
+svg #pause.resumed {
+  fill:none;
+}
+
+@media (min-width: 768px) {
+  #modal-details .modal-body .dl-horizontal dt {
+    width: 100px;
+  }
+  .dl-horizontal dd {
+    margin-left: 120px;
+  }
+}
+
+/* darker slider backgrounds (higher contrast) */
+.slider-track {
+  background-image: linear-gradient(to bottom, #c3c3c3 0%, #efefef 100%);
+}
+.slider-selection {
+  background-image: linear-gradient(to bottom, #efefef 0%, #c3c3c3 100%);
+}
+
+a#time-button  {
+  color: inherit;
+}
+
+.slide {
+  height: 500px;
+}
+
+.slide p {
+  font-size: 16pt;
+}
+
+.slide .modal-header {
+  padding: 5px 15px;
+}
+
+.slide ol {
+  font-weight: bold;
+  color: #428bca;
+}
+
+
+.slide ul {
+  font-size:20pt;
+  font-weight: bold;
+  line-height: 16pt;
+  color: #428bca;
+}
+
+.slide li p {
+  font-weight: normal;
+  font-size:16pt;
+  color: #333;
+  line-height: 1.4;
+}
+
+.slide blockquote p::before {
+  content: "\201C";
+  font-weight: bold;
+  font-size: 18pt;
+  line-height: 14pt;
+  margin-right: 2px;
+}
+.slide blockquote p::after {
+  content: "\201D";
+  font-weight: bold;
+  font-size: 18pt;
+  line-height: 14pt;
+}
+
+.slide blockquote {
+  padding: 0;
+  padding-left: 20px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.slide blockquote p {
+  line-height: 1.1;
+  font-size: 14pt;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 2px;
+}
+
+.slide h1,
+.slide h2,
+.slide h3,
+.slide h4,
+.slide h5,
+.slide h6,
+.blue {
+  color: #428bca;
+}
+
+.slide .gray {
+  color: #333;
+}
