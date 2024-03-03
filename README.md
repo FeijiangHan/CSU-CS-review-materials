@@ -72,9 +72,9 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 # New：实验室和科研小组参与
 
-刘安丰老师实验室科研机会丰富，我们本科生科研团队网站：https://feijiang.info/team-en。下面是一些参与成员：
+刘安丰老师（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）实验室科研机会丰富，我们本科生科研团队网站：https://feijiang.info/team-en。
 
-![e3dcebaecbc7b5e32d111b0c6347631](./assets/e3dcebaecbc7b5e32d111b0c6347631.jpg)
+赵颖老师实验室也招收编程能力强的本科生参与科研。（https://faculty.csu.edu.cn/zhaoying/）
 
 
 
@@ -84,6 +84,7 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 如果有需要可以联系我们，我们会帮你做出最适合CSU CS背景的规划：
 
+* 从目前开始到留学前的详细规划
 * 刷高GPA的可行方案（卡分、平时分、重修、缓考、公选课…）
 * 弱基础准备Toefl和GRE的方法
 * 本科发论文和做科研的方法
