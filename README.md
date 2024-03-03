@@ -18,34 +18,59 @@ P.S. I am currently preparing to study abroad. When the time comes, I will write
 Please feel free to ask any questions about learning in the issues section. All are welcome to contribute additional materials to build an even better learning environment.
 
 **Core Materials:**
-Linux - Sophomore Year, Second Semester (大二下)
-Python - Sophomore Year, Second Semester (大二下)
-Web Technology (web技术) - Junior Year, First Semester (大三上)
-Artificial Intelligence (人工智能) - Sophomore Year, Second Semester (大二下)
-Human-Computer Interaction (人机交互) - Junior Year, First Semester (大三上)
-Computer Architecture (体系结构) - Junior Year, First Semester (大三上)
-Distributed and Cloud Computing (分布式与云计算) - Junior Year, Second Semester (大三下)
-Embedded Systems (嵌入式) - Junior Year, Second Semester (大三下)
-Parallel Computing (并行计算) - Junior Year, Second Semester (大三下)
-Operating Systems (操作系统) - Sophomore Year, Second Semester (大二下)
-Digital Circuits (数字电路) - Sophomore Year, Second Semester (大二下)
-Data Warehousing and Data Mining (数据仓库与数据挖掘) - Junior Year, Second Semester (大三下)
-Databases (数据库) - Sophomore Year, Second Semester (大二下)
-Data Structures (数据结构) - Sophomore Year, Second Semester (大二下)
-Machine Learning (机器学习) - Junior Year, First Semester (大三上)
-Analog Electronics (模电) - Sophomore Year, Second Semester (大二下)
-Principles of Marxism (毛概) - Junior Year, First Semester (大三上)
-Algorithms (算法) - Sophomore Year, Second Semester (大二下)
-Network Security (网络安全) - Junior Year, Second Semester (大三下)
-Computer Systems Architecture (计算机体系结构) - Junior Year, First Semester (大三上)
-Computer Networks (计网) - Sophomore Year, Second Semester (大二下)
-Software Architecture (软件体系结构) - Junior Year, Second Semester (大三下)
-Software Engineering (软件工程) - Junior Year, First Semester (大三上)
+
+* [Linux - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/Linux%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Python - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/python%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Web Technology (web技术) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/web%E6%8A%80%E6%9C%AF%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Artificial Intelligence (人工智能) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Human-Computer Interaction (人机交互) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E4%BA%BA%E6%9C%BA%E4%BA%A4%E4%BA%92%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Computer Architecture (体系结构) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Distributed and Cloud Computing (分布式与云计算) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%8E%E4%BA%91%E8%AE%A1%E7%AE%97%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Embedded Systems (嵌入式) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%B5%8C%E5%85%A5%E5%BC%8F%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Parallel Computing (并行计算) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Operating Systems (操作系统) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Digital Circuits (数字电路) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%95%B0%E5%AD%97%E7%94%B5%E8%B7%AF%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Data Warehousing and Data Mining (数据仓库与数据挖掘) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%95%B0%E6%8D%AE%E4%BB%93%E5%BA%93%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Databases (数据库) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Data Structures (数据结构) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Machine Learning (机器学习) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Analog Electronics (模电) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%A8%A1%E7%94%B5%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Principles of Marxism (毛概) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E6%AF%9B%E6%A6%82%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Algorithms (算法) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E7%AE%97%E6%B3%95%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Network Security (网络安全) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Computer Systems Architecture (计算机体系结构) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E8%AE%A1%E7%AE%97%E6%9C%BA%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
+
+* [Computer Networks (计网) - Sophomore Year, Second Semester (大二下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E8%AE%A1%E7%BD%91%EF%BC%88%E5%A4%A7%E4%BA%8C%E4%B8%8B%EF%BC%89)
+
+* [Software Architecture (软件体系结构) - Junior Year, Second Semester (大三下)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8B%EF%BC%89)
+
+* [Software Engineering (软件工程) - Junior Year, First Semester (大三上)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%EF%BC%88%E5%A4%A7%E4%B8%89%E4%B8%8A%EF%BC%89)
 
 **Optional Materials:**
-Final Review for Programming (编程期末复习) - Covers Parallel Computing and Linux
-Reference - Final Exam Review Schedule (参考-期末复习计)
-Supplementary - Study Abroad English Materials (补充-留学英语资料)
+* [Final Review for Programming (编程期末复习) - Covers Parallel Computing and Linux](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E7%BC%96%E7%A8%8B%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%EF%BC%88%E5%B9%B6%E8%A1%8C%E8%AE%A1%E7%AE%97%2Blinux%EF%BC%89)
+
+* [Reference - Final Exam Review Schedule (参考-期末复习计)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%8F%82%E8%80%83-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%AE%A1%EF%BC%88optional%EF%BC%89)
+
+* [Supplementary - Study Abroad English Materials (补充-留学英语资料)](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E8%A1%A5%E5%85%85-%E7%95%99%E5%AD%A6%E8%8B%B1%E8%AF%AD%E8%B5%84%E6%96%99%EF%BC%88optional%EF%BC%89)
 
 
 # s3-review-materials
