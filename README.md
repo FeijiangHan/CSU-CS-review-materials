@@ -66,7 +66,7 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 * CSU的考试不难，可以参考我之前的复习计划，考前一个月开始有条不紊的复习即可。（具体的复习资料可以参考文档）
 
-* 有任何具体的学习上的问题可以去知乎联系我，或者在这个repo中提issue，或者加我的qq
+* 有任何具体的学习上的问题可以去知乎联系我，或者在这个repo中提issue，或者给我发邮件：hanfeijiang_edu@163.com | 2918589839@qq.com
 
 
 
@@ -82,7 +82,7 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 如果你现在大一/大二/大三，准备留学美国/香港，请谨慎寻找校外中介（无CS项目和科研背景 or 无美国本地人的中介不可信）。
 
-如果有需要可以联系我们，我们会帮你做出最适合CSU CS背景的规划：
+如果有需要可以联系我们(hanfeijiang_edu@163.com | 2918589839@qq.com)，我们会帮你做出最适合CSU CS背景的规划：
 
 * 从目前开始到留学前的详细规划
 * 刷高GPA的可行方案（卡分、平时分、重修、缓考、公选课…）
