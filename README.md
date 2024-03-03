@@ -17,6 +17,35 @@ P.S. I am currently preparing to study abroad. When the time comes, I will write
 
 Please feel free to ask any questions about learning in the issues section. All are welcome to contribute additional materials to build an even better learning environment.
 
+**Core Materials:**
+Linux - Sophomore Year, Second Semester (大二下)
+Python - Sophomore Year, Second Semester (大二下)
+Web Technology (web技术) - Junior Year, First Semester (大三上)
+Artificial Intelligence (人工智能) - Sophomore Year, Second Semester (大二下)
+Human-Computer Interaction (人机交互) - Junior Year, First Semester (大三上)
+Computer Architecture (体系结构) - Junior Year, First Semester (大三上)
+Distributed and Cloud Computing (分布式与云计算) - Junior Year, Second Semester (大三下)
+Embedded Systems (嵌入式) - Junior Year, Second Semester (大三下)
+Parallel Computing (并行计算) - Junior Year, Second Semester (大三下)
+Operating Systems (操作系统) - Sophomore Year, Second Semester (大二下)
+Digital Circuits (数字电路) - Sophomore Year, Second Semester (大二下)
+Data Warehousing and Data Mining (数据仓库与数据挖掘) - Junior Year, Second Semester (大三下)
+Databases (数据库) - Sophomore Year, Second Semester (大二下)
+Data Structures (数据结构) - Sophomore Year, Second Semester (大二下)
+Machine Learning (机器学习) - Junior Year, First Semester (大三上)
+Analog Electronics (模电) - Sophomore Year, Second Semester (大二下)
+Principles of Marxism (毛概) - Junior Year, First Semester (大三上)
+Algorithms (算法) - Sophomore Year, Second Semester (大二下)
+Network Security (网络安全) - Junior Year, Second Semester (大三下)
+Computer Systems Architecture (计算机体系结构) - Junior Year, First Semester (大三上)
+Computer Networks (计网) - Sophomore Year, Second Semester (大二下)
+Software Architecture (软件体系结构) - Junior Year, Second Semester (大三下)
+Software Engineering (软件工程) - Junior Year, First Semester (大三上)
+
+**Optional Materials:**
+Final Review for Programming (编程期末复习) - Covers Parallel Computing and Linux
+Reference - Final Exam Review Schedule (参考-期末复习计)
+Supplementary - Study Abroad English Materials (补充-留学英语资料)
 
 
 # s3-review-materials
