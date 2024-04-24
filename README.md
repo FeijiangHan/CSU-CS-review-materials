@@ -128,7 +128,7 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
 
-本科生科研小团队：https://feijiang.info/team-en。
+本科生科研小团队：https://feijiang.info/team-en/
 
 赵颖老师实验室也招收编程能力强的本科生参与科研。（https://faculty.csu.edu.cn/zhaoying/）
 
