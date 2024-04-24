@@ -107,6 +107,8 @@ Please feel free to ask any questions about learning in the issues section. All 
 * 有任何具体的学习上的问题可以去知乎联系我，或者在这个repo中提issue，或者加我的qq
 * 可以参考我的期末备考思路：[点击这里查看](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%8F%82%E8%80%83-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%AE%A1%EF%BC%88optional%EF%BC%89)
 
+# New: 其他资源仓库
+（为了方便更广泛的获取资源，这里引用了CSU其他同学整理的资料仓库。如果你想在此处补充你的仓库链接，请提出issue并附上你的仓库链接）
 
 # New：大二资料补充说明
 
@@ -121,11 +123,6 @@ Please feel free to ask any questions about learning in the issues section. All 
 5. 各种考试资料的整理，已经整理了很多有价值的人工智能试卷，python开卷打印的索引等；还整理了各科需要看的专业书籍，例如计网和操作系统的《王道考研》电子版，此书可覆盖计网期末考试重点，我也已在书上标记了老师强调的重点，并在某乎已经发布了去年考试重点+考完以后的和重点匹配的情况。
 6. ~~专业资料整理，大量计算机专业书籍。我整理了一些大佬推荐的专业书籍，包含计网、操作系统、算法、数据库等科目，例如《程序员的自我修养—链接、装载与库》、《汇编白皮书》、《The.Art.of.Computer.Programming.Volume.3》、《我的第一本算法书》、《Database System Concepts, Sixth Edition》.....打包一起送了~~。（由于上传限制，此部分暂时删除）
 
-# New：学习方法论说明
-
-* CSU的考试不难，可以参考我之前的复习计划，考前一个月开始有条不紊的复习即可。（具体的复习资料可以参考文档）
-
-* 有任何具体的学习上的问题可以去知乎联系我，或者在这个repo中提issue，或者给我发邮件。
 
 # New：实验室和科研小组参与
 
