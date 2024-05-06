@@ -100,17 +100,18 @@ Please feel free to ask any questions about learning in the issues section. All 
 **欢迎大家push新的资料进来，构建更好的学习环境**
 
 
-# New：学习方法论说明
+# 学习方法论说明
 
 * CSU的考试不难，可以参考我之前的复习计划，考前一个月开始有条不紊的复习即可。（具体的复习资料可以参考文档）
 
 * 有任何具体的学习上的问题可以去知乎联系我，或者在这个repo中提issue，或者加我的qq
 * 可以参考我的期末备考思路：[点击这里查看](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%8F%82%E8%80%83-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%AE%A1%EF%BC%88optional%EF%BC%89)
 
-# New: 其他资源仓库
+# 其他资源仓库
 （为了方便更广泛的获取资源，这里引用了CSU其他同学整理的资料仓库。如果你想在此处补充你的仓库链接，请提出issue并附上你的仓库链接）
+https://github.com/LukiRyan/CSU-CS_DS-Assignments
 
-# New：大二资料补充说明
+# 大二资料补充说明
 
 资料受众： 计科或计算机专业有需要的人（保研/出国/工作）
 
@@ -124,7 +125,7 @@ Please feel free to ask any questions about learning in the issues section. All 
 6. ~~专业资料整理，大量计算机专业书籍。我整理了一些大佬推荐的专业书籍，包含计网、操作系统、算法、数据库等科目，例如《程序员的自我修养—链接、装载与库》、《汇编白皮书》、《The.Art.of.Computer.Programming.Volume.3》、《我的第一本算法书》、《Database System Concepts, Sixth Edition》.....打包一起送了~~。（由于上传限制，此部分暂时删除）
 
 
-# New：实验室和科研小组参与
+# 实验室和科研小组参与
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
 
@@ -132,11 +133,11 @@ Please feel free to ask any questions about learning in the issues section. All 
 
 赵颖老师实验室也招收编程能力强的本科生参与科研。（https://faculty.csu.edu.cn/zhaoying/）
 
-# New：留学计划
+# 留学计划
 
 如果你现在大一/大二/大三，准备留学美国/香港，请谨慎寻找中介（无CS项目和科研背景 or 无美国本地人的中介不可信）。
 
-如果有需要可以联系我们(2918589839@qq.com)，我们会帮你做出最适合CSU CS背景的规划：
+如果有需要可以联系我(2918589839@qq.com)，我们会帮你做出最适合CSU CS背景的规划：
 
 * 从目前开始到留学前的详细规划
 * 刷高GPA的可行方案（卡分、平时分、重修、缓考、公选课…）
