@@ -35,10 +35,12 @@
 * 可以参考我的期末备考思路：[点击这里查看](https://github.com/FeijiangHan/s3-review-materials/tree/main/%E5%8F%82%E8%80%83-%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E8%AE%A1%EF%BC%88optional%EF%BC%89)
 
 # 其他资源仓库
-（为了方便更广泛的获取资源，这里引用了CSU其他同学整理的资料仓库。如果你想在此处补充你的仓库链接，请提出issue并附上你的仓库链接）：
+为了方便更广泛的获取资源，这里引用了CSU其他同学整理的资料仓库。
+如果你想在此处补充你的仓库链接，请提出issue并附上你的仓库链接：
 
 * https://github.com/LukiRyan/CSU-CS_DS-Assignments
 * https://github.com/akikohaku/CSU-PPT
+
 
 # 大二资料补充说明
 
