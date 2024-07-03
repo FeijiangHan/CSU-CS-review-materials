@@ -28,7 +28,8 @@
 
 # NEW！实验室和科研小组参与
 
-我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。
+我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。直接qq或者邮件联系我即可。
+
 我做的方向和大模型和Diffusion相关，具体课题如下：
 
 **大模型/NLP的应用，上下文学习/微调/结合GNN训练**
@@ -40,6 +41,7 @@
 ![image](https://github.com/FeijiangHan/CSU-CS-review-materials/assets/88610657/eee3258f-8e99-4723-95bf-03e1bd04d664)
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
+
 AIOT本科生科研小团队：https://feijiang.info/team-en/
 
 # 学习方法论说明
