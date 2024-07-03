@@ -26,6 +26,21 @@
 
 **欢迎大家push新的资料进来，构建更好的学习环境**
 
+# NEW！实验室和科研小组参与
+
+我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。
+我做的方向和大模型和Diffusion相关，具体课题如下：
+
+**大模型/NLP的应用，上下文学习/微调/结合GNN训练**
+![image](https://github.com/FeijiangHan/CSU-CS-review-materials/assets/88610657/a3acb4dc-7231-4efe-b80f-fd47b214ec10)
+
+**Diffusion和图神经网络的应用，基于对比学习和Diffusion结合**
+* 面向图结构做 对比学习+Diffusion
+* 面向image结构 对比学习+Diffusion
+![image](https://github.com/FeijiangHan/CSU-CS-review-materials/assets/88610657/eee3258f-8e99-4723-95bf-03e1bd04d664)
+
+刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
+AIOT本科生科研小团队：https://feijiang.info/team-en/
 
 # 学习方法论说明
 
@@ -56,13 +71,6 @@
 6. ~~专业资料整理，大量计算机专业书籍。我整理了一些大佬推荐的专业书籍，包含计网、操作系统、算法、数据库等科目，例如《程序员的自我修养—链接、装载与库》、《汇编白皮书》、《The.Art.of.Computer.Programming.Volume.3》、《我的第一本算法书》、《Database System Concepts, Sixth Edition》.....打包一起送了~~。（由于上传限制，此部分暂时删除）
 
 
-# 实验室和科研小组参与
-
-刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
-
-本科生科研小团队：https://feijiang.info/team-en/
-
-赵颖老师实验室也招收编程能力强的本科生参与科研。（https://faculty.csu.edu.cn/zhaoying/）
 
 # 留学计划
 
