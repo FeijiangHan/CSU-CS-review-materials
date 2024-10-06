@@ -26,23 +26,16 @@
 
 **欢迎大家push新的资料进来，构建更好的学习环境**
 
-# NEW！实验室和科研小组参与
+# NEW！ 实验室和科研小组参与
 
 我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。直接qq或者邮件联系我即可。
-
-我做的方向和大模型和Diffusion相关，具体课题如下：
-
+我做的方向和LLM相关，具体课题如下：
+**LLM Inference优化**
+**多模态大模型VLM应用**
 **大模型/NLP的应用，上下文学习/微调/结合GNN训练**
-![image](https://github.com/FeijiangHan/CSU-CS-review-materials/assets/88610657/a3acb4dc-7231-4efe-b80f-fd47b214ec10)
-
 **Diffusion和图神经网络的应用，基于对比学习和Diffusion结合**
-* 面向图结构做 对比学习+Diffusion
-* 面向image结构 对比学习+Diffusion
-![image](https://github.com/FeijiangHan/CSU-CS-review-materials/assets/88610657/eee3258f-8e99-4723-95bf-03e1bd04d664)
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
-
-AIOT本科生科研小团队：https://feijiang.info/team-en/
 
 # 学习方法论说明
 
@@ -55,7 +48,7 @@ AIOT本科生科研小团队：https://feijiang.info/team-en/
 为了方便更广泛的获取资源，这里引用了CSU其他同学整理的资料仓库。
 如果你想在此处补充你的仓库链接，请提出issue并附上你的仓库链接：
 
-* https://github.com/LukiRyan/CSU-CS_DS-Assignments
+* https://github.com/R10836/CSU-CS_DS-Assignments
 * https://github.com/akikohaku/CSU-PPT
 
 
