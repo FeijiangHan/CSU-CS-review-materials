@@ -30,10 +30,10 @@
 
 我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。直接qq或者邮件联系我即可。
 我做的方向和LLM相关，具体课题如下：
-**LLM Inference优化**
-**多模态大模型VLM应用**
-**大模型/NLP的应用，上下文学习/微调/结合GNN训练**
-**Diffusion和图神经网络的应用，基于对比学习和Diffusion结合**
+* **LLM Inference优化**
+* **多模态大模型VLM应用**
+* **大模型/NLP的应用，上下文学习/微调/结合GNN训练**
+* **Diffusion和图神经网络的应用，基于对比学习和Diffusion结合**
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
 
