@@ -22,18 +22,29 @@
 
 不过卷绩点当然也是有意义的，我从大一到大三排名升了85名（总均分从87->92.31），一切皆有可能，现在开始冲刺为时不晚，加油！
 
-如果你有学习上的问题可以在issue中提问，也可以邮箱联系我：hanfeijiang_edu@163.com | 2918589839@qq.com
+如果你有学习上的问题可以在issue中提问，也可以邮箱联系我：feijianghan@gmail.com
 
 **欢迎大家push新的资料进来，构建更好的学习环境**
 
-# NEW！ 实验室和科研小组参与
+# 2025 NEW！ 科研小组招聘合作者
 
-我目前在进行几个研究课题，欢迎有编程、绘图基础的同学找我一起做科研发论文。直接qq或者邮件联系我即可。
-我做的方向和LLM相关，具体课题如下：
-* **LLM Inference优化**
-* **多模态大模型VLM应用**
-* **大模型/NLP的应用，上下文学习/微调/结合GNN训练**
-* **Diffusion和图神经网络的应用，基于对比学习和Diffusion结合**
+我目前在Upenn（宾夕法尼亚大学）进行几个研究课题，欢迎各位同学找我一起做科研发论文，有意者请邮件联系我并附上你的CV。
+
+**你可以获得的：**
+1. 论文（一作/共一/二作）
+2. 宾大教授推荐信
+3. 宾大实验室远程RA机会
+
+我目前的方向和LLM相关，涉及LLM内部机制的优化、下游应用的优化：
+* **LLM Inference优化：** Prompt Engineering, LLm Agent, LLM Reasoning
+* **多模态大模型VLM应用:** VLM for Science
+* **大模型/NLP的应用:** LLM for Science
+* **Diffusion和图神经网络的应用**: Graph for Science
+
+**能力要求：**
+1. 编程能力过关，可以借助AI快速编程实现Idea
+2. 有NLP/LLM经验
+3. 有科研经历者优先，但不强制
 
 刘安丰老师实验室科研机会丰富。（https://faculty.csu.edu.cn/anfengliu/zh_CN/index.htm）
 
