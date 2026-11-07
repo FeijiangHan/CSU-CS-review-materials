@@ -1,6 +1,6 @@
 # CSU-review-materials
 
-[![Star History Chart](https://api.star-history.com/svg?repos=FeijiangHan/CSU-CS-review-materials&type=Date)](https://star-history.com/#FeijiangHan/CSU-CS-review-materials&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=FeijiangHan/CSU-CS-review-materials&type=Date)](https://www.star-history.com/?type=date&repos=FeijiangHan%2FCSU-CS-review-materials)
 
 # 中南大学-计算机专业课期末复习资料汇总（重点/整理/试题..）
 
